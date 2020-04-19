@@ -50,7 +50,7 @@ stock int TF2_GetStunFlags(int client)
 	int m_StunShared = GetPlayerShared_OfOffset(STUN_OFFSET);
 	Address pStun = Dereference(view_as<Address>(m_StunShared) + GetEntityAddress(client));
 	
-	return view_as<int>(Dereference(pStun + Address(STUN_FLAGS_OFFSET)));
+	return view_as<int>(Dereference(pStun + view_as<Address>(STUN_FLAGS_OFFSET)));
 }
 
 stock void TF2_SetStunFlags(int client, int flags) 
@@ -58,7 +58,7 @@ stock void TF2_SetStunFlags(int client, int flags)
 	int m_StunShared = GetPlayerShared_OfOffset(STUN_OFFSET);
 	Address pStun = Dereference(view_as<Address>(m_StunShared) + GetEntityAddress(client));
 	
-	StoreToAddress(pStun, flags, NumberType_Int32);
+	StoreToAddress(pStun + view_as<Address>(STUN_FLAGS_OFFSET), flags, NumberType_Int32);
 }
 
 
