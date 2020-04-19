@@ -41,7 +41,7 @@ stock float TF2_GetOriginalStunDuration(int client)
 	if(pStun==Address_Null)
 		return 0.0;
 	
-	float duration = GetGameTime() - view_as<float>(Dereference(pStun + view_as<Address>(STUN_ORIGINAL_OFFSET)));
+	float duration = view_as<float>(Dereference(pStun + view_as<Address>(STUN_ORIGINAL_OFFSET)));
 	return duration < 0.0 ? 0.0:duration;
 }
 
