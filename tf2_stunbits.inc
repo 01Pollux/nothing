@@ -18,7 +18,7 @@ forward Action TF2_OnApplyStunBallEffect(int client, int victim, int &bits);
 public SharedPlugin __TF2_STUNBALL =
 {
 	name = "Override StunBall",
-	file = "testt.smx",
+	file = "tf2_stun.smx",
 	#if defined REQUIRE_PLUGIN
 	required = 1,
 	#else
