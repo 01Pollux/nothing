@@ -1,0 +1,46 @@
+"Games"
+{
+	"tf"
+	{
+		"Functions"
+		{
+			"CTFStunBall::ApplyBallImpactEffectOnVictim"
+			{
+				"signature"	"CTFStunBall::ApplyBallImpactEffectOnVictim"
+				"callconv"	"thiscall"
+				"this"		"entity"
+				"return"		"void"
+				"arguments"
+				{
+					"victim"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+		}
+		"Addresses"
+		{
+			"CTFStunBall::StunPlayer::OverrideBits"
+			{
+				"signature"	"CTFStunBall::ApplyBallImpactEffectOnVictim"
+				"windows"
+				{
+					"offset"	"278"
+				}
+				"linux"
+				{
+					"offset"	"1254"
+				}
+			}
+		}
+		"Signatures"
+		{
+			"CTFStunBall::ApplyBallImpactEffectOnVictim"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x90\x00\x00\x00\x53\x57\x8B\x7D\x08"
+			}
+		}
+	}
+}
