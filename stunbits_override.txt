@@ -40,6 +40,7 @@
 			{
 				"library"	"server"
 				"windows"	"\x55\x8B\xEC\x81\xEC\x90\x00\x00\x00\x53\x57\x8B\x7D\x08"
+				"linux"		"@_ZN11CTFStunBall29ApplyBallImpactEffectOnVictimEP11CBaseEntity"
 			}
 		}
 	}
