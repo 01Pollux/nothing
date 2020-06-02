@@ -25,7 +25,7 @@ public APLRes AskPluginLoad2(Handle pContext, bool bIsLate, char[] err, int err_
 
 public void OnPluginStart()
 {
-	GameData pCfg = new GameData("stunbits_override");
+	GameData pCfg = new GameData("tf2.stun_info");
 	
 	g_pStunBits = pCfg.GetAddress("CTFStunBall::StunPlayer::OverrideBits");
 	
