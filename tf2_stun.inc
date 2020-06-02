@@ -13,7 +13,6 @@ enum struct stun_struct_t {
 	float flStartFadeTime;
 	float flStunAmount;
 	int iStunFlags;
-	int Unk;
 }
 
 static stock Address GetActiveStunInfo(int player)
