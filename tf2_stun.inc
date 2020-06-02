@@ -6,70 +6,77 @@
 
 #include <tf2_stocks>
 
-#define STUN_OFFSET 0x44C
-
-#define STUN_ORIGINAL_OFFSET 0x04
-#define STUN_CURRENT_OFFSET 0x0C
-#define STUN_FLAGS_OFFSET 0x14
-
-stock float TF2_GetCurrentStunDuration(int client)
-{
-	int m_StunShared = GetPlayerShared_OfOffset(STUN_OFFSET);
-	Address pStun = Dereference(view_as<Address>(m_StunShared) + GetEntityAddress(client));
-	if(pStun==Address_Null)
-		return 0.0;
-	
-	float duration = view_as<float>(Dereference(pStun + view_as<Address>(STUN_CURRENT_OFFSET))) - GetGameTime();
-	return duration < 0.0 ? 0.0:duration;
+enum struct stun_struct_t {
+	int hPlayer;
+	float flDuration;
+	float flExpireTime;
+	float flStartFadeTime;
+	float flStunAmount;
+	int iStunFlags;
+	int Unk;
 }
 
-stock bool TF2_SetCurrentStunDuration(int client, float duration)
+static stock Address GetActiveStunInfo(int player)
 {
-	int m_StunShared = GetPlayerShared_OfOffset(STUN_OFFSET);
-	Address pStun = Dereference(view_as<Address>(m_StunShared) + GetEntityAddress(client));
-	if(pStun==Address_Null)
-		return false;
+	static int m_Shared = 0;
+	static Handle hGetActiveStunInfo = null;
+	if (!m_Shared) { 
+		m_Shared = FindSendPropInfo("CTFPlayer", "m_Shared");
+		
+		GameData cfg = new GameData("tf2.stun_info");
+		StartPrepSDKCall(SDKCall_Raw);
+		PrepSDKCall_SetFromConf(cfg, SDKConf_Signature, "CTFPlayerShared::GetActiveStunInfo");
+		PrepSDKCall_SetReturnInfo(SDKType_PlainOldData, SDKPass_Plain);
+		hGetActiveStunInfo = EndPrepSDKCall();
+		delete cfg;
+	}
 	
-	StoreToAddress(pStun+ view_as<Address>(STUN_CURRENT_OFFSET), view_as<int>(GetGameTime() + duration), NumberType_Int32);
+	if(!hGetActiveStunInfo) {
+		ThrowError("Invalid GetActiveStunInfo Handle");
+		return Address_Null;
+	}
+	
+	Address pPlayerShared = GetEntityAddress(player) + view_as<Address>(m_Shared);
+	return SDKCall(hGetActiveStunInfo, pPlayerShared);
+}
+
+stock bool TF2_GetActiveStunInfo(int client, stun_struct_t str)
+{
+	if (!TF2_IsPlayerInCondition(client, TFCond_Dazed)) {
+		return false
+	}
+	
+	Address infos = GetActiveStunInfo(client);
+	if (!infos) {
+		return false
+	}
+	
+	str.hPlayer = EntRefToEntIndex(LoadFromAddress(infos, NumberType_Int32) | (1 << 31));
+	str.flDuration = view_as<float>(LoadFromAddress(infos + view_as<Address>(0x04), NumberType_Int32));
+	str.flExpireTime = view_as<float>(LoadFromAddress(infos + view_as<Address>(0x08), NumberType_Int32));
+	str.flStartFadeTime = view_as<float>(LoadFromAddress(infos + view_as<Address>(0x0C), NumberType_Int32));
+	str.flStunAmount = view_as<float>(LoadFromAddress(infos + view_as<Address>(0x10), NumberType_Int32));
+	str.iStunFlags = LoadFromAddress(infos + view_as<Address>(0x14), NumberType_Int32);
+	
 	return true;
 }
 
-stock float TF2_GetOriginalStunDuration(int client)
+stock bool TF2_SetActiveStunInfo(int client, const stun_struct_t str)
 {
-	int m_StunShared = GetPlayerShared_OfOffset(STUN_OFFSET);
-	Address pStun = Dereference(view_as<Address>(m_StunShared) + GetEntityAddress(client));
-	if(pStun==Address_Null)
-		return 0.0;
-	
-	float duration = view_as<float>(Dereference(pStun + view_as<Address>(STUN_ORIGINAL_OFFSET)));
-	return duration < 0.0 ? 0.0:duration;
-}
-
-stock int TF2_GetStunFlags(int client)
-{
-	int m_StunShared = GetPlayerShared_OfOffset(STUN_OFFSET);
-	Address pStun = Dereference(view_as<Address>(m_StunShared) + GetEntityAddress(client));
-	
-	return view_as<int>(Dereference(pStun + view_as<Address>(STUN_FLAGS_OFFSET)));
-}
-
-stock void TF2_SetStunFlags(int client, int flags) 
-{
-	int m_StunShared = GetPlayerShared_OfOffset(STUN_OFFSET);
-	Address pStun = Dereference(view_as<Address>(m_StunShared) + GetEntityAddress(client));
-	
-	StoreToAddress(pStun + view_as<Address>(STUN_FLAGS_OFFSET), flags, NumberType_Int32);
-}
-
-
-static stock Address Dereference(const Address pAddress) {
-	return view_as<Address>(LoadFromAddress(pAddress, NumberType_Int32));
-}
-
-static stock int GetPlayerShared_OfOffset(int offset) {
-	static int m_Shared = -1;
-	if(m_Shared==-1) {
-		m_Shared = FindSendPropInfo("CTFPlayer", "m_Shared");
+	if (!TF2_IsPlayerInCondition(client, TFCond_Dazed)) {
+		return false
 	}
-	return m_Shared + offset;
+	
+	Address infos = GetActiveStunInfo(client);
+	if (!infos) {
+		return false
+	}
+	
+	StoreToAddress(infos, str.hPlayer, NumberType_Int32);
+	StoreToAddress(infos + view_as<Address>(0x04), view_as<int>(str.flDuration), NumberType_Int32);
+	StoreToAddress(infos + view_as<Address>(0x08), view_as<int>(str.flExpireTime), NumberType_Int32);
+	StoreToAddress(infos + view_as<Address>(0x0C), view_as<int>(str.flStartFadeTime), NumberType_Int32);
+	StoreToAddress(infos + view_as<Address>(0x10), view_as<int>(str.flStunAmount), NumberType_Int32);
+	StoreToAddress(infos + view_as<Address>(0x14), str.iStunFlags, NumberType_Int32);
+	return true;
 }
