@@ -1,0 +1,27 @@
+// Dump for "instancebaseline"  Date: 2020/07/25
+//
+
+>Bits: "10" -Max Strings: 1024
+    0 -Name: "352"
+    1 -Name: "317"
+    2 -Name: "7"
+    3 -Name: "248"
+    4 -Name: "234"
+    5 -Name: "84"
+    6 -Name: "80"
+    7 -Name: "210"
+    8 -Name: "345"
+    9 -Name: "79"
+   10 -Name: "114"
+   11 -Name: "52"
+   12 -Name: "46"
+   13 -Name: "29"
+   14 -Name: "347"
+   15 -Name: "119"
+   16 -Name: "33"
+   17 -Name: "6"
+   18 -Name: "63"
+   19 -Name: "1"
+   20 -Name: "112"
+   21 -Name: "118"
+   22 -Name: "19"

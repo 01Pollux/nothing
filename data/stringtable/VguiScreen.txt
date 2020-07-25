@@ -1,0 +1,7 @@
+// Dump for "VguiScreen"  Date: 2020/07/25
+//
+
+>Bits: "8" -Max Strings: 256
+    0 -Name: ""
+    1 -Name: "screen_obj_dispenser_blue"
+    2 -Name: "screen_obj_dispenser_red"

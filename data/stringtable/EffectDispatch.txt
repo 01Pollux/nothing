@@ -1,0 +1,4 @@
+// Dump for "EffectDispatch"  Date: 2020/07/25
+//
+
+>Bits: "10" -Max Strings: 1024

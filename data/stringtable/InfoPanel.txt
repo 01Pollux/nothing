@@ -1,0 +1,6 @@
+// Dump for "InfoPanel"  Date: 2020/07/25
+//
+
+>Bits: "7" -Max Strings: 128
+    0 -Name: "motd"
+    1 -Name: "motd_text"

@@ -1,0 +1,6 @@
+// Dump for "server_query_info"  Date: 2020/07/25
+//
+
+>Bits: "2" -Max Strings: 4
+    0 -Name: "QueryPort"
+    1 -Name: "PureServerWhitelist"

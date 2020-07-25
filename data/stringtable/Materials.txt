@@ -1,0 +1,11 @@
+// Dump for "Materials"  Date: 2020/07/25
+//
+
+>Bits: "10" -Max Strings: 1024
+    0 -Name: "debug/debugempty"
+    1 -Name: "vgui/screens/vgui_overlay"
+    2 -Name: "sprites/obj_icons/icon_obj_neutral"
+    3 -Name: "sprites/obj_icons/icon_obj_red"
+    4 -Name: "sprites/obj_icons/icon_obj_blu"
+    5 -Name: "sprites/obj_icons/icon_base_red"
+    6 -Name: "sprites/obj_icons/icon_base_blu"

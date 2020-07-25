@@ -1,0 +1,5 @@
+// Dump for "genericprecache"  Date: 2020/07/25
+//
+
+>Bits: "9" -Max Strings: 512
+    0 -Name: ""

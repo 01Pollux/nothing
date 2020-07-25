@@ -1,0 +1,5 @@
+// Dump for "GameRulesCreation"  Date: 2020/07/25
+//
+
+>Bits: "0" -Max Strings: 1
+    0 -Name: "classname"

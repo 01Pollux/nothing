@@ -1,0 +1,4 @@
+// Dump for "ServerPopFiles"  Date: 2020/07/25
+//
+
+>Bits: "7" -Max Strings: 128
