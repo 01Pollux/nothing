@@ -1,0 +1,563 @@
+// Dump for "CAI_BaseNPC"  Date: 2020/07/25
+//
+
+// Flag Details:
+//
+// Global: This field is masked for global entity save/restore
+// Save: This field is saved to disk
+// Key: This field can be requested and written to by string name at load time
+// Input: This field can be written to by string name at run time, and a function called
+// Output: This field propogates it's value to all targets whenever it changes
+// FunctionTable: This is a table entry for a member function pointer
+// Ptr: This field is a pointer, not an embedded object
+// Override: The field is an override for one in a base class (only used by prediction system for now)
+//
+
+CAI_BaseNPC - cycler_actor
+- m_flextime (Offset 4064) (Save)(4 Bytes)
+- m_flexnum (Offset 4068) (Save)(4 Bytes)
+- m_flextarget (Offset 4072) (Save)(256 Bytes)
+- m_blinktime (Offset 4328) (Save)(4 Bytes)
+- m_looktime (Offset 4332) (Save)(4 Bytes)
+- m_lookTarget (Offset 4336) (Save)(12 Bytes)
+- m_speaktime (Offset 4348) (Save)(4 Bytes)
+- m_istalking (Offset 4352) (Save)(4 Bytes)
+- m_phoneme (Offset 4356) (Save)(4 Bytes)
+- m_iszSentence (Offset 4360) (Save|Key)(4 Bytes) - Sentence
+- m_sentence (Offset 4364) (Save)(4 Bytes)
+- m_strHullName (Offset 4060) (Save|Key)(4 Bytes) - hull_name
+- m_fLatchedPositions (Offset 3552) (Save)(4 Bytes)
+- m_latchedEyeOrigin (Offset 3556) (Save)(12 Bytes)
+- m_latchedEyeDirection (Offset 3568) (Save)(12 Bytes)
+- m_latchedHeadDirection (Offset 3580) (Save)(12 Bytes)
+- m_goalHeadDirection (Offset 3592) (Save)(12 Bytes)
+- m_goalHeadInfluence (Offset 3604) (Save)(4 Bytes)
+- m_goalSpineYaw (Offset 3608) (Save)(4 Bytes)
+- m_goalBodyYaw (Offset 3612) (Save)(4 Bytes)
+- m_goalHeadCorrection (Offset 3616) (Save)(12 Bytes)
+- m_flBlinktime (Offset 3628) (Save)(4 Bytes)
+- m_hLookTarget (Offset 3632) (Save)(4 Bytes)
+- m_lookQueue (Offset 3636) (Save)(0 Bytes)
+- m_randomLookQueue (Offset 3676) (Save)(0 Bytes)
+- m_syntheticLookQueue (Offset 3656) (Save)(0 Bytes)
+- m_flNextRandomLookTime (Offset 3696) (Save)(4 Bytes)
+- m_iszExpressionScene (Offset 3700) (Save)(4 Bytes)
+- m_hExpressionSceneEnt (Offset 3704) (Save)(4 Bytes)
+- m_flNextRandomExpressionTime (Offset 3708) (Save)(4 Bytes)
+- m_iszIdleExpression (Offset 3716) (Save)(4 Bytes)
+- m_iszAlertExpression (Offset 3720) (Save)(4 Bytes)
+- m_iszCombatExpression (Offset 3724) (Save)(4 Bytes)
+- m_iszDeathExpression (Offset 3728) (Save)(4 Bytes)
+- m_ParameterBodyYaw (Offset 3732) (Save)(4 Bytes)
+- m_ParameterSpineYaw (Offset 3736) (Save)(4 Bytes)
+- m_ParameterNeckTrans (Offset 3740) (Save)(4 Bytes)
+- m_ParameterHeadYaw (Offset 3744) (Save)(4 Bytes)
+- m_ParameterHeadPitch (Offset 3748) (Save)(4 Bytes)
+- m_ParameterHeadRoll (Offset 3752) (Save)(4 Bytes)
+- m_FlexweightBodyRightLeft (Offset 3756) (Save)(4 Bytes)
+- m_FlexweightChestRightLeft (Offset 3760) (Save)(4 Bytes)
+- m_FlexweightHeadForwardBack (Offset 3764) (Save)(4 Bytes)
+- m_FlexweightHeadRightLeft (Offset 3768) (Save)(4 Bytes)
+- m_FlexweightHeadUpDown (Offset 3772) (Save)(4 Bytes)
+- m_FlexweightHeadTilt (Offset 3776) (Save)(4 Bytes)
+- m_ParameterGestureHeight (Offset 3780) (Save)(4 Bytes)
+- m_ParameterGestureWidth (Offset 3784) (Save)(4 Bytes)
+- m_FlexweightGestureUpDown (Offset 3788) (Save)(4 Bytes)
+- m_FlexweightGestureRightLeft (Offset 3792) (Save)(4 Bytes)
+- m_flAccumYawDelta (Offset 3544) (Save)(4 Bytes)
+- m_flAccumYawScale (Offset 3548) (Save)(4 Bytes)
+- m_flextarget (Offset 3796) (Save)(256 Bytes)
+- m_bDontUseSemaphore (Offset 4052) (Save|Key)(1 Bytes) - DontUseSpeechSemaphore
+- m_iszExpressionOverride (Offset 3712) (Save|Key)(4 Bytes) - ExpressionOverride
+ Sub-Class Table (1 Deep): m_pExpresser - CAI_Expresser
+ - m_ConceptHistories (Offset 8) (Save)(0 Bytes)
+ - m_flStopTalkTime (Offset 44) (Save)(4 Bytes)
+ - m_flStopTalkTimeWithoutDelay (Offset 48) (Save)(4 Bytes)
+ - m_flBlockedTalkTime (Offset 52) (Save)(4 Bytes)
+ - m_voicePitch (Offset 56) (Save)(4 Bytes)
+ - m_flLastTimeAcceptedSpeak (Offset 60) (Save)(4 Bytes)
+- InputSetExpressionOverride (Offset 0) (Input)(0 Bytes) - SetExpressionOverride
+ Sub-Class Table (1 Deep): m_ScheduleState - AIScheduleState_t
+ - iCurTask (Offset 0) (Save)(4 Bytes)
+ - fTaskStatus (Offset 4) (Save)(4 Bytes)
+ - timeStarted (Offset 8) (Save)(4 Bytes)
+ - timeCurTaskStarted (Offset 12) (Save)(4 Bytes)
+ - taskFailureCode (Offset 16) (Save)(4 Bytes)
+ - iTaskInterrupt (Offset 20) (Save)(4 Bytes)
+ - bTaskRanAutomovement (Offset 24) (Save)(1 Bytes)
+ - bTaskUpdatedYaw (Offset 25) (Save)(1 Bytes)
+ - bScheduleWasInterrupted (Offset 26) (Save)(1 Bytes)
+- m_IdealSchedule (Offset 2128) (Save)(4 Bytes)
+- m_failSchedule (Offset 2160) (Save)(4 Bytes)
+- m_bUsingStandardThinkTime (Offset 2165) (Save)(1 Bytes)
+- m_flLastRealThinkTime (Offset 2168) (Save)(4 Bytes)
+- m_flTimePingEffect (Offset 3500) (Save)(4 Bytes)
+- m_bForceConditionsGather (Offset 2320) (Save)(1 Bytes)
+- m_bConditionsGathered (Offset 2321) (Save)(1 Bytes)
+- m_bSkippedChooseEnemy (Offset 2322) (Save)(1 Bytes)
+- m_NPCState (Offset 2324) (Save)(4 Bytes)
+- m_IdealNPCState (Offset 2332) (Save)(4 Bytes)
+- m_flLastStateChangeTime (Offset 2328) (Save)(4 Bytes)
+- m_Efficiency (Offset 2336) (Save)(4 Bytes)
+- m_MoveEfficiency (Offset 2340) (Save)(4 Bytes)
+- m_flNextDecisionTime (Offset 2344) (Save)(4 Bytes)
+- m_SleepState (Offset 2348) (Save|Key)(4 Bytes) - sleepstate
+- m_SleepFlags (Offset 2352) (Save)(4 Bytes)
+- m_flWakeRadius (Offset 2356) (Save|Key)(4 Bytes) - wakeradius
+- m_bWakeSquad (Offset 2360) (Save|Key)(1 Bytes) - wakesquad
+- m_nWakeTick (Offset 2364) (Save)(4 Bytes)
+- m_Activity (Offset 2368) (Save)(0 Bytes)
+- m_translatedActivity (Offset 2372) (Save)(0 Bytes)
+- m_IdealActivity (Offset 2376) (Save)(0 Bytes)
+- m_IdealTranslatedActivity (Offset 2384) (Save)(0 Bytes)
+- m_IdealWeaponActivity (Offset 2388) (Save)(0 Bytes)
+- m_nIdealSequence (Offset 2380) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_pSenses - CAI_Senses
+ - m_LookDist (Offset 8) (Save)(4 Bytes)
+ - m_LastLookDist (Offset 12) (Save)(4 Bytes)
+ - m_TimeLastLook (Offset 16) (Save)(4 Bytes)
+ - m_iSensingFlags (Offset 108) (Save)(4 Bytes)
+ - m_SeenHighPriority (Offset 24) (Save)(0 Bytes)
+ - m_SeenNPCs (Offset 44) (Save)(0 Bytes)
+ - m_SeenMisc (Offset 64) (Save)(0 Bytes)
+ - m_TimeLastLookHighPriority (Offset 96) (Save)(4 Bytes)
+ - m_TimeLastLookNPCs (Offset 100) (Save)(4 Bytes)
+ - m_TimeLastLookMisc (Offset 104) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_pLockedBestSound - CSound
+ - m_hOwner (Offset 0) (Save)(4 Bytes)
+ - m_iVolume (Offset 8) (Save)(4 Bytes)
+ - m_flOcclusionScale (Offset 12) (Save)(4 Bytes)
+ - m_iType (Offset 16) (Save)(4 Bytes)
+ - m_bNoExpirationTime (Offset 30) (Save)(1 Bytes)
+ - m_flExpireTime (Offset 24) (Save)(4 Bytes)
+ - m_iNext (Offset 28) (Save)(2 Bytes)
+ - m_ownerChannelIndex (Offset 32) (Save)(4 Bytes)
+ - m_vecOrigin (Offset 36) (Save)(12 Bytes)
+ - m_bHasOwner (Offset 48) (Save)(1 Bytes)
+ - m_hTarget (Offset 4) (Save)(4 Bytes)
+- m_hEnemy (Offset 2408) (Save)(4 Bytes)
+- m_flTimeEnemyAcquired (Offset 2412) (Save)(4 Bytes)
+- m_hTargetEnt (Offset 2416) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_GiveUpOnDeadEnemyTimer - CRandStopwatch
+ - m_minInterval (Offset 8) (Save)(4 Bytes)
+ - m_maxInterval (Offset 12) (Save)(4 Bytes)
+ - m_fIsRunning (Offset 4) (Save)(1 Bytes)
+ - m_next (Offset 0) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_FailChooseEnemyTimer - CSimpleSimTimer
+ - m_next (Offset 0) (Save)(4 Bytes)
+- m_EnemiesSerialNumber (Offset 2440) (Save)(4 Bytes)
+- m_flAcceptableTimeSeenEnemy (Offset 2444) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_UpdateEnemyPosTimer - CSimpleSimTimer
+ - m_next (Offset 0) (Save)(4 Bytes)
+- m_vecCommandGoal (Offset 2452) (Save)(12 Bytes)
+ Sub-Class Table (1 Deep): m_CommandMoveMonitor - CAI_MoveMonitor
+ - m_vMark (Offset 0) (Save)(12 Bytes)
+ - m_flMarkTolerance (Offset 12) (Save)(4 Bytes)
+- m_flSoundWaitTime (Offset 3472) (Save)(4 Bytes)
+- m_nSoundPriority (Offset 3476) (Save)(4 Bytes)
+- m_flIgnoreDangerSoundsUntil (Offset 3480) (Save)(4 Bytes)
+- m_afCapability (Offset 2544) (Save)(4 Bytes)
+- m_flMoveWaitFinished (Offset 2548) (Save)(4 Bytes)
+- m_hOpeningDoor (Offset 2552) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_pNavigator - CAI_Navigator
+ - m_navType (Offset 12) (Save)(4 Bytes)
+  Sub-Class Table (2 Deep): m_pPath - CAI_Path
+  - m_goalTolerance (Offset 4) (Save)(4 Bytes)
+  - m_activity (Offset 8) (Save)(0 Bytes)
+  - m_target (Offset 16) (Save)(4 Bytes)
+  - m_sequence (Offset 12) (Save)(4 Bytes)
+  - m_vecTargetOffset (Offset 20) (Save)(12 Bytes)
+  - m_waypointTolerance (Offset 32) (Save)(4 Bytes)
+  - m_arrivalActivity (Offset 36) (Save)(0 Bytes)
+  - m_arrivalSequence (Offset 40) (Save)(4 Bytes)
+  - m_bGoalPosSet (Offset 48) (Save)(1 Bytes)
+  - m_goalPos (Offset 52) (Save)(12 Bytes)
+  - m_bGoalTypeSet (Offset 64) (Save)(1 Bytes)
+  - m_goalType (Offset 68) (Save)(4 Bytes)
+  - m_goalFlags (Offset 72) (Save)(4 Bytes)
+  - m_routeStartTime (Offset 76) (Save)(4 Bytes)
+  - m_goalDirection (Offset 80) (Save)(12 Bytes)
+  - m_goalDirectionTarget (Offset 92) (Save)(4 Bytes)
+  - m_goalSpeed (Offset 96) (Save)(4 Bytes)
+  - m_goalSpeedTarget (Offset 100) (Save)(4 Bytes)
+  - m_goalStoppingDistance (Offset 104) (Save)(4 Bytes)
+ - m_bValidateActivitySpeed (Offset 56) (Save)(1 Bytes)
+ - m_bCalledStartMove (Offset 57) (Save)(1 Bytes)
+ - m_fNavComplete (Offset 16) (Save)(1 Bytes)
+ - m_bNotOnNetwork (Offset 58) (Save)(1 Bytes)
+ - m_bLastNavFailed (Offset 17) (Save)(1 Bytes)
+ - m_flNextSimplifyTime (Offset 60) (Save)(4 Bytes)
+ - m_bForcedSimplify (Offset 64) (Save)(1 Bytes)
+ - m_flLastSuccessfulSimplifyTime (Offset 68) (Save)(4 Bytes)
+ - m_flTimeLastAvoidanceTriangulate (Offset 72) (Save)(4 Bytes)
+ - m_timePathRebuildMax (Offset 76) (Save)(4 Bytes)
+ - m_timePathRebuildDelay (Offset 80) (Save)(4 Bytes)
+ - m_timePathRebuildFail (Offset 84) (Save)(4 Bytes)
+ - m_timePathRebuildNext (Offset 88) (Save)(4 Bytes)
+ - m_fRememberStaleNodes (Offset 92) (Save)(1 Bytes)
+ - m_bNoPathcornerPathfinds (Offset 93) (Save)(1 Bytes)
+ - m_bLocalSucceedOnWithinTolerance (Offset 94) (Save)(1 Bytes)
+ - m_hBigStepGroundEnt (Offset 124) (Save)(4 Bytes)
+ - m_hLastBlockingEnt (Offset 128) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_pLocalNavigator - CAI_LocalNavigator
+ Sub-Class Table (1 Deep): m_pPathfinder - CAI_Pathfinder
+ - m_flLastStaleLinkCheckTime (Offset 12) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_pMoveProbe - CAI_MoveProbe
+ - m_bIgnoreTransientEntities (Offset 8) (Save)(1 Bytes)
+ - m_hLastBlockingEnt (Offset 16) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_pMotor - CAI_Motor
+ - m_IdealYaw (Offset 20) (Save)(4 Bytes)
+ - m_YawSpeed (Offset 24) (Save)(4 Bytes)
+ - m_vecVelocity (Offset 28) (Save)(12 Bytes)
+ - m_vecAngularVelocity (Offset 40) (Save)(12 Bytes)
+ - m_nDismountSequence (Offset 52) (Save)(4 Bytes)
+ - m_vecDismount (Offset 56) (Save)(12 Bytes)
+ - m_facingQueue (Offset 68) (Save)(0 Bytes)
+ - m_bYawLocked (Offset 92) (Save)(1 Bytes)
+- m_UnreachableEnts (Offset 2556) (Save)(0 Bytes)
+- m_hInteractionPartner (Offset 2500) (Save)(4 Bytes)
+- m_hLastInteractionTestTarget (Offset 2504) (Save)(4 Bytes)
+- m_hForcedInteractionPartner (Offset 2480) (Save)(4 Bytes)
+- m_flForcedInteractionTimeout (Offset 2496) (Save)(4 Bytes)
+- m_vecForcedWorldPosition (Offset 2484) (Save)(12 Bytes)
+- m_bCannotDieDuringInteraction (Offset 2508) (Save)(1 Bytes)
+- m_iInteractionState (Offset 2512) (Save)(4 Bytes)
+- m_iInteractionPlaying (Offset 2516) (Save)(4 Bytes)
+- m_ScriptedInteractions (Offset 2520) (Save)(0 Bytes)
+- m_flInteractionYaw (Offset 2540) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_CheckOnGroundTimer - CSimpleSimTimer
+ - m_next (Offset 0) (Save)(4 Bytes)
+- m_vDefaultEyeOffset (Offset 2608) (Save)(12 Bytes)
+- m_flNextEyeLookTime (Offset 2620) (Save)(4 Bytes)
+- m_flEyeIntegRate (Offset 2624) (Save)(4 Bytes)
+- m_vEyeLookTarget (Offset 2628) (Save)(12 Bytes)
+- m_vCurEyeTarget (Offset 2640) (Save)(12 Bytes)
+- m_hEyeLookTarget (Offset 2652) (Save)(4 Bytes)
+- m_flHeadYaw (Offset 2656) (Save)(4 Bytes)
+- m_flHeadPitch (Offset 2660) (Save)(4 Bytes)
+- m_flOriginalYaw (Offset 2664) (Save)(4 Bytes)
+- m_bInAScript (Offset 2668) (Save)(1 Bytes)
+- m_scriptState (Offset 2672) (Save)(4 Bytes)
+- m_hCine (Offset 2676) (Save)(4 Bytes)
+- m_ScriptArrivalActivity (Offset 2680) (Save)(0 Bytes)
+- m_strScriptArrivalSequence (Offset 2684) (Save)(4 Bytes)
+- m_flSceneTime (Offset 2688) (Save)(4 Bytes)
+- m_iszSceneCustomMoveSeq (Offset 2692) (Save)(4 Bytes)
+- m_afMemory (Offset 2700) (Save)(4 Bytes)
+- m_hEnemyOccluder (Offset 2704) (Save)(4 Bytes)
+- m_flSumDamage (Offset 2708) (Save)(4 Bytes)
+- m_flLastDamageTime (Offset 2712) (Save)(4 Bytes)
+- m_flLastPlayerDamageTime (Offset 2716) (Save)(4 Bytes)
+- m_flLastSawPlayerTime (Offset 2720) (Save)(4 Bytes)
+- m_flLastAttackTime (Offset 2724) (Save)(4 Bytes)
+- m_flLastEnemyTime (Offset 2728) (Save)(4 Bytes)
+- m_flNextWeaponSearchTime (Offset 2732) (Save)(4 Bytes)
+- m_iszPendingWeapon (Offset 2736) (Save)(4 Bytes)
+- m_bIgnoreUnseenEnemies (Offset 2740) (Save|Key)(1 Bytes) - ignoreunseenenemies
+ Sub-Class Table (1 Deep): m_ShotRegulator - CAI_ShotRegulator
+ - m_flNextShotTime (Offset 0) (Save)(4 Bytes)
+ - m_bInRestInterval (Offset 4) (Save)(1 Bytes)
+ - m_nBurstShotsRemaining (Offset 6) (Save)(2 Bytes)
+ - m_nMinBurstShots (Offset 8) (Save)(2 Bytes)
+ - m_nMaxBurstShots (Offset 10) (Save)(2 Bytes)
+ - m_flMinRestInterval (Offset 12) (Save)(4 Bytes)
+ - m_flMaxRestInterval (Offset 16) (Save)(4 Bytes)
+ - m_flMinBurstInterval (Offset 20) (Save)(4 Bytes)
+ - m_flMaxBurstInterval (Offset 24) (Save)(4 Bytes)
+ - m_bDisabled (Offset 28) (Save)(1 Bytes)
+- m_iDesiredWeaponState (Offset 2776) (Save)(4 Bytes)
+- m_SquadName (Offset 2784) (Save|Key)(4 Bytes) - squadname
+- m_iMySquadSlot (Offset 2788) (Save)(4 Bytes)
+- m_strHintGroup (Offset 2792) (Save|Key)(4 Bytes) - hintgroup
+- m_bHintGroupNavLimiting (Offset 2796) (Save|Key)(1 Bytes) - hintlimiting
+ Sub-Class Table (1 Deep): m_pTacticalServices - CAI_TacticalServices
+ - m_bAllowFindLateralLos (Offset 16) (Save)(1 Bytes)
+- m_flWaitFinished (Offset 2804) (Save)(4 Bytes)
+- m_flNextFlinchTime (Offset 2808) (Save)(4 Bytes)
+- m_flNextDodgeTime (Offset 2812) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_MoveAndShootOverlay - CAI_MoveAndShootOverlay
+ - m_bMovingAndShooting (Offset 8) (Save)(1 Bytes)
+ - m_bNoShootWhileMove (Offset 9) (Save)(1 Bytes)
+ - m_initialDelay (Offset 12) (Save)(4 Bytes)
+ - m_flSuspendUntilTime (Offset 16) (Save)(4 Bytes)
+- m_vecLastPosition (Offset 2836) (Save)(12 Bytes)
+- m_vSavePosition (Offset 2848) (Save)(12 Bytes)
+- m_vInterruptSavePosition (Offset 2860) (Save)(12 Bytes)
+- m_pHintNode (Offset 2872) (Save)(4 Bytes)
+- m_cAmmoLoaded (Offset 2876) (Save)(4 Bytes)
+- m_flDistTooFar (Offset 2880) (Save)(4 Bytes)
+- m_hGoalEnt (Offset 2596) (Save)(4 Bytes)
+- m_flTimeLastMovement (Offset 2600) (Save)(4 Bytes)
+- m_spawnEquipment (Offset 2884) (Save|Key)(4 Bytes) - additionalequipment
+- m_fNoDamageDecal (Offset 2888) (Save)(1 Bytes)
+- m_hStoredPathTarget (Offset 2892) (Save)(4 Bytes)
+- m_vecStoredPathGoal (Offset 2896) (Save)(12 Bytes)
+- m_nStoredPathType (Offset 2908) (Save)(4 Bytes)
+- m_fStoredPathFlags (Offset 2912) (Save)(4 Bytes)
+- m_bDidDeathCleanup (Offset 2924) (Save)(1 Bytes)
+- m_bCrouchDesired (Offset 3434) (Save)(1 Bytes)
+- m_bForceCrouch (Offset 3435) (Save)(1 Bytes)
+- m_bIsCrouching (Offset 3436) (Save)(1 Bytes)
+- m_bPerformAvoidance (Offset 3484) (Save)(1 Bytes)
+- m_bIsMoving (Offset 3485) (Save)(1 Bytes)
+- m_bFadeCorpse (Offset 3486) (Save)(1 Bytes)
+- m_iDeathPose (Offset 2392) (Save)(4 Bytes)
+- m_iDeathFrame (Offset 2396) (Save)(4 Bytes)
+- m_bCheckContacts (Offset 3433) (Save)(1 Bytes)
+- m_bSpeedModActive (Offset 3488) (Save)(1 Bytes)
+- m_iSpeedModRadius (Offset 3492) (Save)(4 Bytes)
+- m_iSpeedModSpeed (Offset 3496) (Save)(4 Bytes)
+- m_hEnemyFilter (Offset 2916) (Save)(4 Bytes)
+- m_iszEnemyFilterName (Offset 2920) (Save|Key)(4 Bytes) - enemyfilter
+- m_bImportanRagdoll (Offset 3487) (Save)(1 Bytes)
+- m_bPlayerAvoidState (Offset 3504) (Save)(1 Bytes)
+- m_OnDamaged (Offset 2928) (Save|Key|Output)(0 Bytes) - OnDamaged
+- m_OnDeath (Offset 2952) (Save|Key|Output)(0 Bytes) - OnDeath
+- m_OnHalfHealth (Offset 2976) (Save|Key|Output)(0 Bytes) - OnHalfHealth
+- m_OnFoundEnemy (Offset 3000) (Save|Key|Output)(0 Bytes) - OnFoundEnemy
+- m_OnLostEnemyLOS (Offset 3024) (Save|Key|Output)(0 Bytes) - OnLostEnemyLOS
+- m_OnLostEnemy (Offset 3048) (Save|Key|Output)(0 Bytes) - OnLostEnemy
+- m_OnFoundPlayer (Offset 3072) (Save|Key|Output)(0 Bytes) - OnFoundPlayer
+- m_OnLostPlayerLOS (Offset 3096) (Save|Key|Output)(0 Bytes) - OnLostPlayerLOS
+- m_OnLostPlayer (Offset 3120) (Save|Key|Output)(0 Bytes) - OnLostPlayer
+- m_OnHearWorld (Offset 3144) (Save|Key|Output)(0 Bytes) - OnHearWorld
+- m_OnHearPlayer (Offset 3168) (Save|Key|Output)(0 Bytes) - OnHearPlayer
+- m_OnHearCombat (Offset 3192) (Save|Key|Output)(0 Bytes) - OnHearCombat
+- m_OnDamagedByPlayer (Offset 3216) (Save|Key|Output)(0 Bytes) - OnDamagedByPlayer
+- m_OnDamagedByPlayerSquad (Offset 3240) (Save|Key|Output)(0 Bytes) - OnDamagedByPlayerSquad
+- m_OnDenyCommanderUse (Offset 3264) (Save|Key|Output)(0 Bytes) - OnDenyCommanderUse
+- m_OnRappelTouchdown (Offset 3288) (Save|Key|Output)(0 Bytes) - OnRappelTouchdown
+- m_OnWake (Offset 3336) (Save|Key|Output)(0 Bytes) - OnWake
+- m_OnSleep (Offset 3312) (Save|Key|Output)(0 Bytes) - OnSleep
+- m_OnForcedInteractionStarted (Offset 3360) (Save|Key|Output)(0 Bytes) - OnForcedInteractionStarted
+- m_OnForcedInteractionAborted (Offset 3384) (Save|Key|Output)(0 Bytes) - OnForcedInteractionAborted
+- m_OnForcedInteractionFinished (Offset 3408) (Save|Key|Output)(0 Bytes) - OnForcedInteractionFinished
+- InputSetRelationship (Offset 0) (Input)(0 Bytes) - SetRelationship
+- InputSetEnemyFilter (Offset 0) (Input)(0 Bytes) - SetEnemyFilter
+- InputSetHealth (Offset 0) (Input)(0 Bytes) - SetHealth
+- InputBeginRappel (Offset 0) (Input)(0 Bytes) - BeginRappel
+- InputSetSquad (Offset 0) (Input)(0 Bytes) - SetSquad
+- InputWake (Offset 0) (Input)(0 Bytes) - Wake
+- InputForgetEntity (Offset 0) (Input)(0 Bytes) - ForgetEntity
+- InputIgnoreDangerSounds (Offset 0) (Input)(0 Bytes) - IgnoreDangerSounds
+- InputBreak (Offset 0) (Input)(0 Bytes) - Break
+- InputStartScripting (Offset 0) (Input)(0 Bytes) - StartScripting
+- InputStopScripting (Offset 0) (Input)(0 Bytes) - StopScripting
+- InputGagEnable (Offset 0) (Input)(0 Bytes) - GagEnable
+- InputGagDisable (Offset 0) (Input)(0 Bytes) - GagDisable
+- InputInsideTransition (Offset 0) (Input)(0 Bytes) - InsideTransition
+- InputOutsideTransition (Offset 0) (Input)(0 Bytes) - OutsideTransition
+- InputActivateSpeedModifier (Offset 0) (Input)(0 Bytes) - ActivateSpeedModifier
+- InputDisableSpeedModifier (Offset 0) (Input)(0 Bytes) - DisableSpeedModifier
+- InputSetSpeedModifierRadius (Offset 0) (Input)(0 Bytes) - SetSpeedModRadius
+- InputSetSpeedModifierSpeed (Offset 0) (Input)(0 Bytes) - SetSpeedModSpeed
+- InputHolsterWeapon (Offset 0) (Input)(0 Bytes) - HolsterWeapon
+- InputHolsterAndDestroyWeapon (Offset 0) (Input)(0 Bytes) - HolsterAndDestroyWeapon
+- InputUnholsterWeapon (Offset 0) (Input)(0 Bytes) - UnholsterWeapon
+- InputForceInteractionWithNPC (Offset 0) (Input)(0 Bytes) - ForceInteractionWithNPC
+- InputUpdateEnemyMemory (Offset 0) (Input)(0 Bytes) - UpdateEnemyMemory
+- CAI_BaseNPCNPCUse (Offset 0) (FunctionTable)(0 Bytes)
+- CAI_BaseNPCCallNPCThink (Offset 0) (FunctionTable)(0 Bytes)
+- CAI_BaseNPCCorpseFallThink (Offset 0) (FunctionTable)(0 Bytes)
+- CAI_BaseNPCNPCInitThink (Offset 0) (FunctionTable)(0 Bytes)
+- m_flNextAttack (Offset 1656) (Save)(4 Bytes)
+- m_eHull (Offset 1664) (Save)(4 Bytes)
+- m_bloodColor (Offset 1668) (Save)(4 Bytes)
+- m_iDamageCount (Offset 1704) (Save)(4 Bytes)
+- m_flFieldOfView (Offset 1672) (Save)(4 Bytes)
+- m_HackedGunPos (Offset 1676) (Save)(12 Bytes)
+- m_RelationshipString (Offset 1688) (Save|Key)(4 Bytes) - Relationship
+- m_LastHitGroup (Offset 1696) (Save)(4 Bytes)
+- m_flDamageAccumulator (Offset 1700) (Save)(4 Bytes)
+- m_impactEnergyScale (Offset 1692) (Save|Key|Input)(4 Bytes) - physdamagescale
+- m_CurrentWeaponProficiency (Offset 1708) (Save)(4 Bytes)
+- m_Relationship (Offset 1712) (Save)(0 Bytes)
+- m_iAmmo (Offset 1732) (Save)(128 Bytes)
+- m_hMyWeapons (Offset 1860) (Save)(192 Bytes)
+- m_hActiveWeapon (Offset 2052) (Save)(4 Bytes)
+- m_bForceServerRagdoll (Offset 1652) (Save)(1 Bytes)
+- m_bPreventWeaponPickup (Offset 1653) (Save)(1 Bytes)
+- InputKilledNPC (Offset 0) (Input)(0 Bytes) - KilledNPC
+- m_flexWeight (Offset 1172) (Save)(384 Bytes)
+- m_viewtarget (Offset 1556) (Save)(12 Bytes)
+- m_flAllowResponsesEndTime (Offset 1620) (Save)(4 Bytes)
+- m_flLastFlexAnimationTime (Offset 1648) (Save)(4 Bytes)
+- m_AnimOverlay (Offset 1152) (Save)(0 Bytes)
+- m_flGroundSpeed (Offset 856) (Save)(4 Bytes)
+- m_flLastEventCheck (Offset 860) (Save)(4 Bytes)
+- m_bSequenceFinished (Offset 928) (Save)(1 Bytes)
+- m_bSequenceLoops (Offset 929) (Save)(1 Bytes)
+- m_nSkin (Offset 880) (Save|Key|Input)(4 Bytes) - skin
+- m_nBody (Offset 884) (Save|Key)(4 Bytes) - body
+- m_nBody (Offset 884) (Save|Key|Input)(4 Bytes) - SetBodyGroup
+- m_nHitboxSet (Offset 888) (Save|Key)(4 Bytes) - hitboxset
+- m_nSequence (Offset 940) (Save|Key)(4 Bytes) - sequence
+- m_flPoseParameter (Offset 944) (Save)(96 Bytes)
+- m_flEncodedController (Offset 1040) (Save)(16 Bytes)
+- m_flPlaybackRate (Offset 896) (Save|Key)(4 Bytes) - playbackrate
+- m_flCycle (Offset 936) (Save|Key)(4 Bytes) - cycle
+- m_pIk (Offset 920) (Save)(0 Bytes)
+- m_iIKCounter (Offset 924) (Save)(4 Bytes)
+- m_bClientSideAnimation (Offset 1056) (Save)(1 Bytes)
+- m_bClientSideFrameReset (Offset 1057) (Save)(1 Bytes)
+- m_nNewSequenceParity (Offset 1060) (Save)(4 Bytes)
+- m_nResetEventsParity (Offset 1064) (Save)(4 Bytes)
+- m_nMuzzleFlashParity (Offset 1068) (Save)(1 Bytes)
+- m_iszLightingOriginRelative (Offset 1080) (Save|Key)(4 Bytes) - LightingOriginHack
+- m_iszLightingOrigin (Offset 1084) (Save|Key)(4 Bytes) - LightingOrigin
+- m_hLightingOrigin (Offset 1072) (Save)(4 Bytes)
+- m_hLightingOriginRelative (Offset 1076) (Save)(4 Bytes)
+- m_flModelScale (Offset 892) (Save)(4 Bytes)
+- m_flDissolveStartTime (Offset 932) (Save)(4 Bytes)
+- InputIgnite (Offset 0) (Input)(0 Bytes) - Ignite
+- InputIgniteLifetime (Offset 0) (Input)(0 Bytes) - IgniteLifetime
+- InputIgniteNumHitboxFires (Offset 0) (Input)(0 Bytes) - IgniteNumHitboxFires
+- InputIgniteHitboxFireScale (Offset 0) (Input)(0 Bytes) - IgniteHitboxFireScale
+- InputBecomeRagdoll (Offset 0) (Input)(0 Bytes) - BecomeRagdoll
+- InputSetLightingOriginRelative (Offset 0) (Input)(0 Bytes) - SetLightingOriginHack
+- InputSetLightingOrigin (Offset 0) (Input)(0 Bytes) - SetLightingOrigin
+- m_OnIgnite (Offset 1108) (Save|Key|Output)(0 Bytes) - OnIgnite
+- m_fadeMinDist (Offset 1096) (Save|Key|Input)(4 Bytes) - fademindist
+- m_fadeMaxDist (Offset 1100) (Save|Key|Input)(4 Bytes) - fademaxdist
+- m_flFadeScale (Offset 1104) (Save|Key)(4 Bytes) - fadescale
+- m_flModelScale (Offset 892) (Save|Key)(4 Bytes) - modelscale
+- InputSetModelScale (Offset 0) (Input)(0 Bytes) - SetModelScale
+- m_fBoneCacheFlags (Offset 1092) (Save)(2 Bytes)
+- m_iClassname (Offset 92) (Save|Key)(4 Bytes) - classname
+- m_iGlobalname (Offset 96) (Global|Save|Key)(4 Bytes) - globalname
+- m_iParent (Offset 100) (Save|Key)(4 Bytes) - parentname
+- m_iHammerID (Offset 104) (Save|Key)(4 Bytes) - hammerid
+- m_flSpeed (Offset 108) (Save|Key)(4 Bytes) - speed
+- m_nRenderFX (Offset 112) (Save|Key)(1 Bytes) - renderfx
+- m_nRenderMode (Offset 113) (Save|Key)(1 Bytes) - rendermode
+- m_flPrevAnimTime (Offset 136) (Save)(4 Bytes)
+- m_flAnimTime (Offset 140) (Save)(4 Bytes)
+- m_flSimulationTime (Offset 144) (Save)(4 Bytes)
+- m_nLastThinkTick (Offset 152) (Save)(4 Bytes)
+- m_nNextThinkTick (Offset 208) (Save|Key)(4 Bytes) - nextthink
+- m_fEffects (Offset 212) (Save|Key)(4 Bytes) - effects
+- m_clrRender (Offset 132) (Save|Key)(4 Bytes) - rendercolor
+- m_nModelIndex (Offset 114) (Global|Save|Key)(2 Bytes) - modelindex
+- touchStamp (Offset 160) (Save)(4 Bytes)
+- m_aThinkFunctions (Offset 164) (Save)(0 Bytes)
+- m_ResponseContexts (Offset 184) (Save)(0 Bytes)
+- m_iszResponseContext (Offset 204) (Save|Key)(4 Bytes) - ResponseContext
+- m_pfnThink (Offset 8) (Save)(4 Bytes)
+- m_pfnTouch (Offset 216) (Save)(4 Bytes)
+- m_pfnUse (Offset 220) (Save)(4 Bytes)
+- m_pfnBlocked (Offset 224) (Save)(4 Bytes)
+- m_pfnMoveDone (Offset 4) (Save)(4 Bytes)
+- m_lifeState (Offset 248) (Save)(1 Bytes)
+- m_takedamage (Offset 249) (Save)(1 Bytes)
+- m_iMaxHealth (Offset 240) (Save|Key)(4 Bytes) - max_health
+- m_iHealth (Offset 244) (Save|Key)(4 Bytes) - health
+- m_target (Offset 236) (Save|Key)(4 Bytes) - target
+- m_iszDamageFilterName (Offset 252) (Save|Key)(4 Bytes) - damagefilter
+- m_hDamageFilter (Offset 256) (Save)(4 Bytes)
+- m_debugOverlays (Offset 260) (Save)(4 Bytes)
+- m_pParent (Offset 328) (Global|Save)(4 Bytes)
+- m_iParentAttachment (Offset 333) (Save)(1 Bytes)
+- m_hMoveParent (Offset 336) (Global|Save)(4 Bytes)
+- m_hMoveChild (Offset 340) (Global|Save)(4 Bytes)
+- m_hMovePeer (Offset 344) (Global|Save)(4 Bytes)
+- m_iEFlags (Offset 276) (Save)(4 Bytes)
+- m_iName (Offset 284) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_Collision - CCollisionProperty
+ - m_vecMinsPreScaled (Offset 8) (Global|Save)(12 Bytes)
+ - m_vecMaxsPreScaled (Offset 20) (Global|Save)(12 Bytes)
+ - m_vecMins (Offset 32) (Global|Save)(12 Bytes)
+ - m_vecMaxs (Offset 44) (Global|Save)(12 Bytes)
+ - m_nSolidType (Offset 65) (Save|Key)(1 Bytes) - solid
+ - m_usSolidFlags (Offset 60) (Save)(2 Bytes)
+ - m_nSurroundType (Offset 64) (Save)(1 Bytes)
+ - m_flRadius (Offset 56) (Save)(4 Bytes)
+ - m_triggerBloat (Offset 66) (Save)(1 Bytes)
+ - m_bUniformTriggerBloat (Offset 67) (Save)(1 Bytes)
+ - m_vecSpecifiedSurroundingMinsPreScaled (Offset 68) (Save)(12 Bytes)
+ - m_vecSpecifiedSurroundingMaxsPreScaled (Offset 80) (Save)(12 Bytes)
+ - m_vecSpecifiedSurroundingMins (Offset 92) (Save)(12 Bytes)
+ - m_vecSpecifiedSurroundingMaxs (Offset 104) (Save)(12 Bytes)
+ - m_vecSurroundingMins (Offset 116) (Save)(12 Bytes)
+ - m_vecSurroundingMaxs (Offset 128) (Save)(12 Bytes)
+ Sub-Class Table (1 Deep): m_Network - CServerNetworkProperty
+ - m_hParent (Offset 52) (Global|Save)(4 Bytes)
+- m_MoveType (Offset 334) (Save)(1 Bytes)
+- m_MoveCollide (Offset 335) (Save)(1 Bytes)
+- m_hOwnerEntity (Offset 488) (Save)(4 Bytes)
+- m_CollisionGroup (Offset 496) (Save)(4 Bytes)
+- m_pPhysicsObject (Offset 500) (Save)(0 Bytes)
+- m_flElasticity (Offset 636) (Save)(4 Bytes)
+- m_flShadowCastDistance (Offset 504) (Save|Key)(4 Bytes) - shadowcastdist
+- m_flDesiredShadowCastDistance (Offset 508) (Save)(4 Bytes)
+- m_iInitialTeamNum (Offset 512) (Save|Key|Input)(4 Bytes) - TeamNum
+- m_iTeamNum (Offset 516) (Save)(4 Bytes)
+- m_hGroundEntity (Offset 528) (Save)(4 Bytes)
+- m_flGroundChangeTime (Offset 532) (Save)(4 Bytes)
+- m_ModelName (Offset 536) (Global|Save|Key)(4 Bytes) - model
+- m_vecBaseVelocity (Offset 540) (Save|Key)(12 Bytes) - basevelocity
+- m_vecAbsVelocity (Offset 552) (Save)(12 Bytes)
+- m_vecAngVelocity (Offset 564) (Save|Key)(12 Bytes) - avelocity
+- m_rgflCoordinateFrame (Offset 576) (Save)(48 Bytes)
+- m_nWaterLevel (Offset 523) (Save|Key)(1 Bytes) - waterlevel
+- m_nWaterType (Offset 522) (Save)(1 Bytes)
+- m_pBlocker (Offset 624) (Save)(4 Bytes)
+- m_flGravity (Offset 628) (Save|Key)(4 Bytes) - gravity
+- m_flFriction (Offset 632) (Save|Key)(4 Bytes) - friction
+- m_flLocalTime (Offset 640) (Save|Key)(4 Bytes) - ltime
+- m_flVPhysicsUpdateLocalTime (Offset 644) (Save)(4 Bytes)
+- m_flMoveDoneTime (Offset 648) (Save)(4 Bytes)
+- m_vecAbsOrigin (Offset 656) (Save)(12 Bytes)
+- m_vecVelocity (Offset 668) (Save|Key)(12 Bytes) - velocity
+- m_iTextureFrameIndex (Offset 680) (Save|Key)(1 Bytes) - texframeindex
+- m_bSimulatedEveryTick (Offset 681) (Save)(1 Bytes)
+- m_bAnimatedEveryTick (Offset 682) (Save)(1 Bytes)
+- m_bAlternateSorting (Offset 683) (Save)(1 Bytes)
+- m_spawnflags (Offset 272) (Save|Key)(4 Bytes) - spawnflags
+- m_nTransmitStateOwnedCounter (Offset 332) (Save)(1 Bytes)
+- m_angAbsRotation (Offset 780) (Save)(12 Bytes)
+- m_vecOrigin (Offset 792) (Save)(12 Bytes)
+- m_angRotation (Offset 804) (Save)(12 Bytes)
+- m_vecViewOffset (Offset 820) (Save|Key)(12 Bytes) - view_ofs
+- m_fFlags (Offset 280) (Save)(4 Bytes)
+- m_nSimulationTick (Offset 268) (Save)(4 Bytes)
+- m_flNavIgnoreUntilTime (Offset 524) (Save)(4 Bytes)
+- InputSetTeam (Offset 0) (Input)(0 Bytes) - SetTeam
+- InputKill (Offset 0) (Input)(0 Bytes) - Kill
+- InputKillHierarchy (Offset 0) (Input)(0 Bytes) - KillHierarchy
+- InputUse (Offset 0) (Input)(0 Bytes) - Use
+- InputAlpha (Offset 0) (Input)(0 Bytes) - Alpha
+- InputAlternativeSorting (Offset 0) (Input)(0 Bytes) - AlternativeSorting
+- InputColor (Offset 0) (Input)(0 Bytes) - Color
+- InputSetParent (Offset 0) (Input)(0 Bytes) - SetParent
+- InputSetParentAttachment (Offset 0) (Input)(0 Bytes) - SetParentAttachment
+- InputSetParentAttachmentMaintainOffset (Offset 0) (Input)(0 Bytes) - SetParentAttachmentMaintainOffset
+- InputClearParent (Offset 0) (Input)(0 Bytes) - ClearParent
+- InputSetDamageFilter (Offset 0) (Input)(0 Bytes) - SetDamageFilter
+- InputEnableDamageForces (Offset 0) (Input)(0 Bytes) - EnableDamageForces
+- InputDisableDamageForces (Offset 0) (Input)(0 Bytes) - DisableDamageForces
+- InputDispatchEffect (Offset 0) (Input)(0 Bytes) - DispatchEffect
+- InputDispatchResponse (Offset 0) (Input)(0 Bytes) - DispatchResponse
+- InputAddContext (Offset 0) (Input)(0 Bytes) - AddContext
+- InputRemoveContext (Offset 0) (Input)(0 Bytes) - RemoveContext
+- InputClearContext (Offset 0) (Input)(0 Bytes) - ClearContext
+- InputDisableShadow (Offset 0) (Input)(0 Bytes) - DisableShadow
+- InputEnableShadow (Offset 0) (Input)(0 Bytes) - EnableShadow
+- InputAddOutput (Offset 0) (Input)(0 Bytes) - AddOutput
+- InputFireUser1 (Offset 0) (Input)(0 Bytes) - FireUser1
+- InputFireUser2 (Offset 0) (Input)(0 Bytes) - FireUser2
+- InputFireUser3 (Offset 0) (Input)(0 Bytes) - FireUser3
+- InputFireUser4 (Offset 0) (Input)(0 Bytes) - FireUser4
+- m_OnUser1 (Offset 684) (Save|Key|Output)(0 Bytes) - OnUser1
+- m_OnUser2 (Offset 708) (Save|Key|Output)(0 Bytes) - OnUser2
+- m_OnUser3 (Offset 732) (Save|Key|Output)(0 Bytes) - OnUser3
+- m_OnUser4 (Offset 756) (Save|Key|Output)(0 Bytes) - OnUser4
+- CBaseEntitySUB_Remove (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_DoNothing (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_StartFadeOut (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_StartFadeOutInstant (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_FadeOut (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_Vanish (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_CallUseToggle (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntityShadowCastDistThink (Offset 0) (FunctionTable)(0 Bytes)
+- m_hEffectEntity (Offset 492) (Save)(4 Bytes)
+- m_nModelIndexOverrides (Offset 116) (Save)(16 Bytes)
