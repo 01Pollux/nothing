@@ -1,0 +1,156 @@
+// Dump for "CInfoLightingRelative"  Date: 2020/07/25
+//
+
+// Flag Details:
+//
+// Global: This field is masked for global entity save/restore
+// Save: This field is saved to disk
+// Key: This field can be requested and written to by string name at load time
+// Input: This field can be written to by string name at run time, and a function called
+// Output: This field propogates it's value to all targets whenever it changes
+// FunctionTable: This is a table entry for a member function pointer
+// Ptr: This field is a pointer, not an embedded object
+// Override: The field is an override for one in a base class (only used by prediction system for now)
+//
+
+CInfoLightingRelative - info_lighting_relative
+- m_strLightingLandmark (Offset 860) (Save|Key)(4 Bytes) - LightingLandmark
+- m_hLightingLandmark (Offset 856) (Save)(4 Bytes)
+- m_iClassname (Offset 92) (Save|Key)(4 Bytes) - classname
+- m_iGlobalname (Offset 96) (Global|Save|Key)(4 Bytes) - globalname
+- m_iParent (Offset 100) (Save|Key)(4 Bytes) - parentname
+- m_iHammerID (Offset 104) (Save|Key)(4 Bytes) - hammerid
+- m_flSpeed (Offset 108) (Save|Key)(4 Bytes) - speed
+- m_nRenderFX (Offset 112) (Save|Key)(1 Bytes) - renderfx
+- m_nRenderMode (Offset 113) (Save|Key)(1 Bytes) - rendermode
+- m_flPrevAnimTime (Offset 136) (Save)(4 Bytes)
+- m_flAnimTime (Offset 140) (Save)(4 Bytes)
+- m_flSimulationTime (Offset 144) (Save)(4 Bytes)
+- m_nLastThinkTick (Offset 152) (Save)(4 Bytes)
+- m_nNextThinkTick (Offset 208) (Save|Key)(4 Bytes) - nextthink
+- m_fEffects (Offset 212) (Save|Key)(4 Bytes) - effects
+- m_clrRender (Offset 132) (Save|Key)(4 Bytes) - rendercolor
+- m_nModelIndex (Offset 114) (Global|Save|Key)(2 Bytes) - modelindex
+- touchStamp (Offset 160) (Save)(4 Bytes)
+- m_aThinkFunctions (Offset 164) (Save)(0 Bytes)
+- m_ResponseContexts (Offset 184) (Save)(0 Bytes)
+- m_iszResponseContext (Offset 204) (Save|Key)(4 Bytes) - ResponseContext
+- m_pfnThink (Offset 8) (Save)(4 Bytes)
+- m_pfnTouch (Offset 216) (Save)(4 Bytes)
+- m_pfnUse (Offset 220) (Save)(4 Bytes)
+- m_pfnBlocked (Offset 224) (Save)(4 Bytes)
+- m_pfnMoveDone (Offset 4) (Save)(4 Bytes)
+- m_lifeState (Offset 248) (Save)(1 Bytes)
+- m_takedamage (Offset 249) (Save)(1 Bytes)
+- m_iMaxHealth (Offset 240) (Save|Key)(4 Bytes) - max_health
+- m_iHealth (Offset 244) (Save|Key)(4 Bytes) - health
+- m_target (Offset 236) (Save|Key)(4 Bytes) - target
+- m_iszDamageFilterName (Offset 252) (Save|Key)(4 Bytes) - damagefilter
+- m_hDamageFilter (Offset 256) (Save)(4 Bytes)
+- m_debugOverlays (Offset 260) (Save)(4 Bytes)
+- m_pParent (Offset 328) (Global|Save)(4 Bytes)
+- m_iParentAttachment (Offset 333) (Save)(1 Bytes)
+- m_hMoveParent (Offset 336) (Global|Save)(4 Bytes)
+- m_hMoveChild (Offset 340) (Global|Save)(4 Bytes)
+- m_hMovePeer (Offset 344) (Global|Save)(4 Bytes)
+- m_iEFlags (Offset 276) (Save)(4 Bytes)
+- m_iName (Offset 284) (Save)(4 Bytes)
+ Sub-Class Table (1 Deep): m_Collision - CCollisionProperty
+ - m_vecMinsPreScaled (Offset 8) (Global|Save)(12 Bytes)
+ - m_vecMaxsPreScaled (Offset 20) (Global|Save)(12 Bytes)
+ - m_vecMins (Offset 32) (Global|Save)(12 Bytes)
+ - m_vecMaxs (Offset 44) (Global|Save)(12 Bytes)
+ - m_nSolidType (Offset 65) (Save|Key)(1 Bytes) - solid
+ - m_usSolidFlags (Offset 60) (Save)(2 Bytes)
+ - m_nSurroundType (Offset 64) (Save)(1 Bytes)
+ - m_flRadius (Offset 56) (Save)(4 Bytes)
+ - m_triggerBloat (Offset 66) (Save)(1 Bytes)
+ - m_bUniformTriggerBloat (Offset 67) (Save)(1 Bytes)
+ - m_vecSpecifiedSurroundingMinsPreScaled (Offset 68) (Save)(12 Bytes)
+ - m_vecSpecifiedSurroundingMaxsPreScaled (Offset 80) (Save)(12 Bytes)
+ - m_vecSpecifiedSurroundingMins (Offset 92) (Save)(12 Bytes)
+ - m_vecSpecifiedSurroundingMaxs (Offset 104) (Save)(12 Bytes)
+ - m_vecSurroundingMins (Offset 116) (Save)(12 Bytes)
+ - m_vecSurroundingMaxs (Offset 128) (Save)(12 Bytes)
+ Sub-Class Table (1 Deep): m_Network - CServerNetworkProperty
+ - m_hParent (Offset 52) (Global|Save)(4 Bytes)
+- m_MoveType (Offset 334) (Save)(1 Bytes)
+- m_MoveCollide (Offset 335) (Save)(1 Bytes)
+- m_hOwnerEntity (Offset 488) (Save)(4 Bytes)
+- m_CollisionGroup (Offset 496) (Save)(4 Bytes)
+- m_pPhysicsObject (Offset 500) (Save)(0 Bytes)
+- m_flElasticity (Offset 636) (Save)(4 Bytes)
+- m_flShadowCastDistance (Offset 504) (Save|Key)(4 Bytes) - shadowcastdist
+- m_flDesiredShadowCastDistance (Offset 508) (Save)(4 Bytes)
+- m_iInitialTeamNum (Offset 512) (Save|Key|Input)(4 Bytes) - TeamNum
+- m_iTeamNum (Offset 516) (Save)(4 Bytes)
+- m_hGroundEntity (Offset 528) (Save)(4 Bytes)
+- m_flGroundChangeTime (Offset 532) (Save)(4 Bytes)
+- m_ModelName (Offset 536) (Global|Save|Key)(4 Bytes) - model
+- m_vecBaseVelocity (Offset 540) (Save|Key)(12 Bytes) - basevelocity
+- m_vecAbsVelocity (Offset 552) (Save)(12 Bytes)
+- m_vecAngVelocity (Offset 564) (Save|Key)(12 Bytes) - avelocity
+- m_rgflCoordinateFrame (Offset 576) (Save)(48 Bytes)
+- m_nWaterLevel (Offset 523) (Save|Key)(1 Bytes) - waterlevel
+- m_nWaterType (Offset 522) (Save)(1 Bytes)
+- m_pBlocker (Offset 624) (Save)(4 Bytes)
+- m_flGravity (Offset 628) (Save|Key)(4 Bytes) - gravity
+- m_flFriction (Offset 632) (Save|Key)(4 Bytes) - friction
+- m_flLocalTime (Offset 640) (Save|Key)(4 Bytes) - ltime
+- m_flVPhysicsUpdateLocalTime (Offset 644) (Save)(4 Bytes)
+- m_flMoveDoneTime (Offset 648) (Save)(4 Bytes)
+- m_vecAbsOrigin (Offset 656) (Save)(12 Bytes)
+- m_vecVelocity (Offset 668) (Save|Key)(12 Bytes) - velocity
+- m_iTextureFrameIndex (Offset 680) (Save|Key)(1 Bytes) - texframeindex
+- m_bSimulatedEveryTick (Offset 681) (Save)(1 Bytes)
+- m_bAnimatedEveryTick (Offset 682) (Save)(1 Bytes)
+- m_bAlternateSorting (Offset 683) (Save)(1 Bytes)
+- m_spawnflags (Offset 272) (Save|Key)(4 Bytes) - spawnflags
+- m_nTransmitStateOwnedCounter (Offset 332) (Save)(1 Bytes)
+- m_angAbsRotation (Offset 780) (Save)(12 Bytes)
+- m_vecOrigin (Offset 792) (Save)(12 Bytes)
+- m_angRotation (Offset 804) (Save)(12 Bytes)
+- m_vecViewOffset (Offset 820) (Save|Key)(12 Bytes) - view_ofs
+- m_fFlags (Offset 280) (Save)(4 Bytes)
+- m_nSimulationTick (Offset 268) (Save)(4 Bytes)
+- m_flNavIgnoreUntilTime (Offset 524) (Save)(4 Bytes)
+- InputSetTeam (Offset 0) (Input)(0 Bytes) - SetTeam
+- InputKill (Offset 0) (Input)(0 Bytes) - Kill
+- InputKillHierarchy (Offset 0) (Input)(0 Bytes) - KillHierarchy
+- InputUse (Offset 0) (Input)(0 Bytes) - Use
+- InputAlpha (Offset 0) (Input)(0 Bytes) - Alpha
+- InputAlternativeSorting (Offset 0) (Input)(0 Bytes) - AlternativeSorting
+- InputColor (Offset 0) (Input)(0 Bytes) - Color
+- InputSetParent (Offset 0) (Input)(0 Bytes) - SetParent
+- InputSetParentAttachment (Offset 0) (Input)(0 Bytes) - SetParentAttachment
+- InputSetParentAttachmentMaintainOffset (Offset 0) (Input)(0 Bytes) - SetParentAttachmentMaintainOffset
+- InputClearParent (Offset 0) (Input)(0 Bytes) - ClearParent
+- InputSetDamageFilter (Offset 0) (Input)(0 Bytes) - SetDamageFilter
+- InputEnableDamageForces (Offset 0) (Input)(0 Bytes) - EnableDamageForces
+- InputDisableDamageForces (Offset 0) (Input)(0 Bytes) - DisableDamageForces
+- InputDispatchEffect (Offset 0) (Input)(0 Bytes) - DispatchEffect
+- InputDispatchResponse (Offset 0) (Input)(0 Bytes) - DispatchResponse
+- InputAddContext (Offset 0) (Input)(0 Bytes) - AddContext
+- InputRemoveContext (Offset 0) (Input)(0 Bytes) - RemoveContext
+- InputClearContext (Offset 0) (Input)(0 Bytes) - ClearContext
+- InputDisableShadow (Offset 0) (Input)(0 Bytes) - DisableShadow
+- InputEnableShadow (Offset 0) (Input)(0 Bytes) - EnableShadow
+- InputAddOutput (Offset 0) (Input)(0 Bytes) - AddOutput
+- InputFireUser1 (Offset 0) (Input)(0 Bytes) - FireUser1
+- InputFireUser2 (Offset 0) (Input)(0 Bytes) - FireUser2
+- InputFireUser3 (Offset 0) (Input)(0 Bytes) - FireUser3
+- InputFireUser4 (Offset 0) (Input)(0 Bytes) - FireUser4
+- m_OnUser1 (Offset 684) (Save|Key|Output)(0 Bytes) - OnUser1
+- m_OnUser2 (Offset 708) (Save|Key|Output)(0 Bytes) - OnUser2
+- m_OnUser3 (Offset 732) (Save|Key|Output)(0 Bytes) - OnUser3
+- m_OnUser4 (Offset 756) (Save|Key|Output)(0 Bytes) - OnUser4
+- CBaseEntitySUB_Remove (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_DoNothing (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_StartFadeOut (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_StartFadeOutInstant (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_FadeOut (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_Vanish (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntitySUB_CallUseToggle (Offset 0) (FunctionTable)(0 Bytes)
+- CBaseEntityShadowCastDistThink (Offset 0) (FunctionTable)(0 Bytes)
+- m_hEffectEntity (Offset 492) (Save)(4 Bytes)
+- m_nModelIndexOverrides (Offset 116) (Save)(16 Bytes)
