@@ -1,0 +1,18 @@
+// Dump for "CFogController"  Date: 2020/07/25
+//
+
+ Member: m_fog.enable (offset 920) (type integer) (bits 1) (Unsigned)
+ Member: m_fog.blend (offset 921) (type integer) (bits 1) (Unsigned)
+ Member: m_fog.dirPrimary (offset 860) (type vector) (bits 0) (CoordMP)
+ Member: m_fog.colorPrimary (offset 872) (type integer) (bits 32) (Unsigned)
+ Member: m_fog.colorSecondary (offset 876) (type integer) (bits 32) (Unsigned)
+ Member: m_fog.start (offset 888) (type float) (bits 0) (NoScale)
+ Member: m_fog.end (offset 892) (type float) (bits 0) (NoScale)
+ Member: m_fog.maxdensity (offset 900) (type float) (bits 0) (NoScale)
+ Member: m_fog.farz (offset 896) (type float) (bits 0) (NoScale)
+ Member: m_fog.colorPrimaryLerpTo (offset 880) (type integer) (bits 32) (Unsigned)
+ Member: m_fog.colorSecondaryLerpTo (offset 884) (type integer) (bits 32) (Unsigned)
+ Member: m_fog.startLerpTo (offset 904) (type float) (bits 0) (NoScale)
+ Member: m_fog.endLerpTo (offset 908) (type float) (bits 0) (NoScale)
+ Member: m_fog.lerptime (offset 912) (type float) (bits 0) (NoScale)
+ Member: m_fog.duration (offset 916) (type float) (bits 0) (NoScale)

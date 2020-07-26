@@ -1,0 +1,5 @@
+// Dump for "CInfoOverlayAccessor"  Date: 2020/07/25
+//
+
+ Member: m_iTextureFrameIndex (offset 680) (type integer) (bits 8) (Unsigned)
+ Member: m_iOverlayID (offset 856) (type integer) (bits 32) (Unsigned)

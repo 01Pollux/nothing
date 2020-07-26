@@ -1,0 +1,5 @@
+// Dump for "CParticleFire"  Date: 2020/07/25
+//
+
+ Member: m_vOrigin (offset 856) (type vector) (bits 0) (CoordMP)
+ Member: m_vDirection (offset 868) (type vector) (bits 0) (NoScale)

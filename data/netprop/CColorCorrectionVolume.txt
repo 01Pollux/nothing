@@ -1,0 +1,5 @@
+// Dump for "CColorCorrectionVolume"  Date: 2020/07/25
+//
+
+ Member: m_Weight (offset 1152) (type float) (bits 0) (NoScale)
+ Member: m_lookupFilename (offset 1160) (type string) (bits 0) ()

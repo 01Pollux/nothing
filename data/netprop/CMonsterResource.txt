@@ -1,0 +1,8 @@
+// Dump for "CMonsterResource"  Date: 2020/07/25
+//
+
+ Member: m_iBossHealthPercentageByte (offset 856) (type integer) (bits 8) (Unsigned)
+ Member: m_iBossStunPercentageByte (offset 860) (type integer) (bits 8) (Unsigned)
+ Member: m_iSkillShotCompleteCount (offset 864) (type integer) (bits 3) (Unsigned)
+ Member: m_fSkillShotComboEndTime (offset 868) (type float) (bits 0) (NoScale)
+ Member: m_iBossState (offset 872) (type integer) (bits 32) ()

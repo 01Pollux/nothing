@@ -1,0 +1,5 @@
+// Dump for "CFuncOccluder"  Date: 2020/07/25
+//
+
+ Member: m_bActive (offset 856) (type integer) (bits 1) (Unsigned)
+ Member: m_nOccluderIndex (offset 860) (type integer) (bits 10) (Unsigned)

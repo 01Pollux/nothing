@@ -1,0 +1,11 @@
+// Dump for "CFish"  Date: 2020/07/25
+//
+
+ Member: m_poolOrigin (offset 1204) (type vector) (bits 0) (CoordMP)
+ Member: m_angle (offset 1172) (type float) (bits 7) ()
+ Member: m_x (offset 1160) (type float) (bits 7) ()
+ Member: m_y (offset 1164) (type float) (bits 7) ()
+ Member: m_z (offset 1168) (type float) (bits 0) (NoScale|CoordMP)
+ Member: m_nModelIndex (offset 114) (type integer) (bits 13) ()
+ Member: m_lifeState (offset 248) (type integer) (bits 8) ()
+ Member: m_waterLevel (offset 1216) (type float) (bits 0) (NoScale)

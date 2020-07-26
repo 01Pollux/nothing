@@ -1,0 +1,16 @@
+// Dump for "CEnvWind"  Date: 2020/07/25
+//
+
+ Table: m_EnvWindShared (offset 856) (type DT_EnvWindShared)
+  Member: m_iMinWind (offset 12) (type integer) (bits 10) (Unsigned)
+  Member: m_iMaxWind (offset 16) (type integer) (bits 10) (Unsigned)
+  Member: m_iMinGust (offset 24) (type integer) (bits 10) (Unsigned)
+  Member: m_iMaxGust (offset 28) (type integer) (bits 10) (Unsigned)
+  Member: m_flMinGustDelay (offset 32) (type float) (bits 0) (NoScale)
+  Member: m_flMaxGustDelay (offset 36) (type float) (bits 0) (NoScale)
+  Member: m_iGustDirChange (offset 44) (type integer) (bits 9) (Unsigned)
+  Member: m_iWindSeed (offset 8) (type integer) (bits 32) (Unsigned)
+  Member: m_iInitialWindDir (offset 108) (type integer) (bits 9) (Unsigned)
+  Member: m_flInitialWindSpeed (offset 112) (type float) (bits 0) (NoScale)
+  Member: m_flStartTime (offset 4) (type float) (bits 0) (NoScale)
+  Member: m_flGustDuration (offset 40) (type float) (bits 0) (NoScale)

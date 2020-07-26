@@ -1,0 +1,9 @@
+// Dump for "CColorCorrection"  Date: 2020/07/25
+//
+
+ Member: m_vecOrigin (offset 792) (type vector) (bits 0) (NoScale)
+ Member: m_MinFalloff (offset 888) (type float) (bits 0) (NoScale)
+ Member: m_MaxFalloff (offset 892) (type float) (bits 0) (NoScale)
+ Member: m_flCurWeight (offset 896) (type float) (bits 0) (NoScale)
+ Member: m_netlookupFilename (offset 900) (type string) (bits 0) ()
+ Member: m_bEnabled (offset 885) (type integer) (bits 1) (Unsigned)

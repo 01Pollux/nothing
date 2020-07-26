@@ -1,0 +1,5 @@
+// Dump for "CEnvDetailController"  Date: 2020/07/25
+//
+
+ Member: m_flFadeStartDist (offset 856) (type float) (bits 0) (NoScale)
+ Member: m_flFadeEndDist (offset 860) (type float) (bits 0) (NoScale)

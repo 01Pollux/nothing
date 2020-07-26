@@ -1,0 +1,15 @@
+// Dump for "CLightGlow"  Date: 2020/07/25
+//
+
+ Member: m_clrRender (offset 132) (type integer) (bits 32) (Unsigned)
+ Member: m_nHorizontalSize (offset 856) (type integer) (bits 16) (Unsigned)
+ Member: m_nVerticalSize (offset 860) (type integer) (bits 16) (Unsigned)
+ Member: m_nMinDist (offset 864) (type integer) (bits 16) (Unsigned)
+ Member: m_nMaxDist (offset 868) (type integer) (bits 16) (Unsigned)
+ Member: m_nOuterMaxDist (offset 872) (type integer) (bits 16) (Unsigned)
+ Member: m_spawnflags (offset 272) (type integer) (bits 8) (Unsigned)
+ Member: m_vecOrigin (offset 792) (type vector) (bits 0) (CoordMP)
+ Member: m_angRotation (offset 804) (type vector) (bits 13) ()
+ Member: moveparent (offset 336) (type integer) (bits 21) (Unsigned)
+ Member: m_flGlowProxySize (offset 876) (type float) (bits 6) (RoundUp)
+ Member: HDRColorScale (offset 880) (type float) (bits 0) (NoScale)
