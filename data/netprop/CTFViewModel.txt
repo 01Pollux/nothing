@@ -1,0 +1,19 @@
+// Dump for "CTFViewModel"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseViewModel)
+  Member: m_nModelIndex (offset 114) (type integer) (bits 13) ()
+  Member: m_nBody (offset 884) (type integer) (bits 8) ()
+  Member: m_nSkin (offset 880) (type integer) (bits 10) ()
+  Member: m_nSequence (offset 940) (type integer) (bits 8) (Unsigned)
+  Member: m_nViewModelIndex (offset 1168) (type integer) (bits 1) (Unsigned)
+  Member: m_flPlaybackRate (offset 896) (type float) (bits 8) (RoundUp)
+  Member: m_fEffects (offset 212) (type integer) (bits 10) (Unsigned)
+  Member: m_nAnimationParity (offset 1184) (type integer) (bits 3) (Unsigned)
+  Member: m_hWeapon (offset 1196) (type integer) (bits 21) (Unsigned)
+  Member: m_hOwner (offset 1172) (type integer) (bits 21) (Unsigned)
+  Member: m_nNewSequenceParity (offset 1060) (type integer) (bits 3) (Unsigned)
+  Member: m_nResetEventsParity (offset 1064) (type integer) (bits 3) (Unsigned)
+  Member: m_nMuzzleFlashParity (offset 1068) (type integer) (bits 2) (Unsigned)
+  Member: m_flPoseParameter (offset 944) (type float) (bits 8) (InsideArray)
+  Member: m_flPoseParameter (offset 0) (type array) (bits 0) ()

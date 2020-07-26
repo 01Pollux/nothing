@@ -1,0 +1,5 @@
+// Dump for "CWaterLODControl"  Date: 2020/07/25
+//
+
+ Member: m_flCheapWaterStartDistance (offset 856) (type float) (bits 0) (NoScale)
+ Member: m_flCheapWaterEndDistance (offset 860) (type float) (bits 0) (NoScale)
