@@ -1,0 +1,11 @@
+// Dump for "CTEDust"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_TEParticleSystem)
+  Table: baseclass (offset 0) (type DT_BaseTempEntity)
+  Member: m_vecOrigin[0] (offset 12) (type float) (bits 0) (NoScale|VectorElem|CoordMpIntegral)
+  Member: m_vecOrigin[1] (offset 16) (type float) (bits 0) (NoScale|VectorElem|CoordMpIntegral)
+  Member: m_vecOrigin[2] (offset 20) (type float) (bits 0) (NoScale|VectorElem|CoordMpIntegral)
+ Member: m_flSize (offset 24) (type float) (bits 0) (NoScale|CoordMP)
+ Member: m_flSpeed (offset 28) (type float) (bits 0) (NoScale|CoordMP)
+ Member: m_vecDirection (offset 32) (type vector) (bits 4) ()

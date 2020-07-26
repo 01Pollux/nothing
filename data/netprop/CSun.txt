@@ -1,0 +1,12 @@
+// Dump for "CSun"  Date: 2020/07/25
+//
+
+ Member: m_clrRender (offset 132) (type integer) (bits 32) (Unsigned)
+ Member: m_clrOverlay (offset 896) (type integer) (bits 32) (Unsigned)
+ Member: m_vDirection (offset 856) (type vector) (bits 0) (Normal)
+ Member: m_bOn (offset 900) (type integer) (bits 1) (Unsigned)
+ Member: m_nSize (offset 888) (type integer) (bits 10) (Unsigned)
+ Member: m_nOverlaySize (offset 892) (type integer) (bits 10) (Unsigned)
+ Member: m_nMaterial (offset 904) (type integer) (bits 32) (Unsigned)
+ Member: m_nOverlayMaterial (offset 908) (type integer) (bits 32) (Unsigned)
+ Member: HDRColorScale (offset 912) (type float) (bits 0) (NoScale)

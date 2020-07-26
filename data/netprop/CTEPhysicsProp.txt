@@ -1,0 +1,13 @@
+// Dump for "CTEPhysicsProp"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin (offset 12) (type vector) (bits 0) (CoordMP)
+ Member: m_angRotation[0] (offset 24) (type float) (bits 13) (VectorElem)
+ Member: m_angRotation[1] (offset 28) (type float) (bits 13) (VectorElem)
+ Member: m_angRotation[2] (offset 32) (type float) (bits 13) (VectorElem)
+ Member: m_vecVelocity (offset 36) (type vector) (bits 0) (CoordMP)
+ Member: m_nModelIndex (offset 48) (type integer) (bits 13) ()
+ Member: m_nSkin (offset 52) (type integer) (bits 10) ()
+ Member: m_nFlags (offset 56) (type integer) (bits 2) (Unsigned)
+ Member: m_nEffects (offset 60) (type integer) (bits 10) (Unsigned)

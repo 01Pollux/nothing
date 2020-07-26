@@ -1,0 +1,6 @@
+// Dump for "CTEEnergySplash"  Date: 2020/07/25
+//
+
+ Member: m_vecPos (offset 12) (type vector) (bits 0) (CoordMP)
+ Member: m_vecDir (offset 24) (type vector) (bits 0) (CoordMP)
+ Member: m_bExplosive (offset 36) (type integer) (bits 1) (Unsigned)

@@ -1,0 +1,9 @@
+// Dump for "CTeam"  Date: 2020/07/25
+//
+
+ Member: m_iTeamNum (offset 944) (type integer) (bits 5) ()
+ Member: m_iScore (offset 928) (type integer) (bits 32) ()
+ Member: m_iRoundsWon (offset 932) (type integer) (bits 8) ()
+ Member: m_szTeamname (offset 896) (type string) (bits 0) ()
+ Member: player_array_element (offset 0) (type integer) (bits 10) (Unsigned|InsideArray)
+ Member: "player_array" (offset 0) (type array) (bits 0) ()

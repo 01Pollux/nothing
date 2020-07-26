@@ -1,0 +1,19 @@
+// Dump for "CTeamRoundTimer"  Date: 2020/07/25
+//
+
+ Member: m_bTimerPaused (offset 856) (type integer) (bits 1) (Unsigned)
+ Member: m_flTimeRemaining (offset 860) (type float) (bits 0) (NoScale)
+ Member: m_flTimerEndTime (offset 864) (type float) (bits 0) (NoScale)
+ Member: m_nTimerMaxLength (offset 880) (type integer) (bits 32) ()
+ Member: m_bIsDisabled (offset 868) (type integer) (bits 1) (Unsigned)
+ Member: m_bShowInHUD (offset 869) (type integer) (bits 1) (Unsigned)
+ Member: m_nTimerLength (offset 872) (type integer) (bits 32) ()
+ Member: m_nTimerInitialLength (offset 876) (type integer) (bits 32) ()
+ Member: m_bAutoCountdown (offset 884) (type integer) (bits 1) (Unsigned)
+ Member: m_nSetupTimeLength (offset 888) (type integer) (bits 32) ()
+ Member: m_nState (offset 892) (type integer) (bits 32) ()
+ Member: m_bStartPaused (offset 896) (type integer) (bits 1) (Unsigned)
+ Member: m_bShowTimeRemaining (offset 897) (type integer) (bits 1) (Unsigned)
+ Member: m_bStopWatchTimer (offset 904) (type integer) (bits 1) (Unsigned)
+ Member: m_bInCaptureWatchState (offset 898) (type integer) (bits 1) (Unsigned)
+ Member: m_flTotalTime (offset 900) (type float) (bits 0) (NoScale)

@@ -1,0 +1,9 @@
+// Dump for "CTETFBlood"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin[0] (offset 12) (type float) (bits 0) (NoScale|CoordMpIntegral)
+ Member: m_vecOrigin[1] (offset 16) (type float) (bits 0) (NoScale|CoordMpIntegral)
+ Member: m_vecOrigin[2] (offset 20) (type float) (bits 0) (NoScale|CoordMpIntegral)
+ Member: m_vecNormal (offset 24) (type vector) (bits 6) ()
+ Member: entindex (offset 36) (type integer) (bits 11) (Unsigned)

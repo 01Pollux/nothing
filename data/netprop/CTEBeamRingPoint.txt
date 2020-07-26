@@ -1,0 +1,22 @@
+// Dump for "CTEBeamRingPoint"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseBeam)
+  Member: m_nModelIndex (offset 12) (type integer) (bits 13) ()
+  Member: m_nHaloIndex (offset 16) (type integer) (bits 13) ()
+  Member: m_nStartFrame (offset 20) (type integer) (bits 8) (Unsigned)
+  Member: m_nFrameRate (offset 24) (type integer) (bits 8) (Unsigned)
+  Member: m_fLife (offset 28) (type float) (bits 8) ()
+  Member: m_fWidth (offset 32) (type float) (bits 10) ()
+  Member: m_fEndWidth (offset 36) (type float) (bits 10) ()
+  Member: m_nFadeLength (offset 40) (type integer) (bits 8) (Unsigned)
+  Member: m_fAmplitude (offset 44) (type float) (bits 8) ()
+  Member: m_nSpeed (offset 64) (type integer) (bits 8) (Unsigned)
+  Member: r (offset 48) (type integer) (bits 8) (Unsigned)
+  Member: g (offset 52) (type integer) (bits 8) (Unsigned)
+  Member: b (offset 56) (type integer) (bits 8) (Unsigned)
+  Member: a (offset 60) (type integer) (bits 8) (Unsigned)
+  Member: m_nFlags (offset 68) (type integer) (bits 32) (Unsigned)
+ Member: m_vecCenter (offset 72) (type vector) (bits 0) (CoordMP)
+ Member: m_flStartRadius (offset 84) (type float) (bits 16) (RoundUp)
+ Member: m_flEndRadius (offset 88) (type float) (bits 16) (RoundUp)

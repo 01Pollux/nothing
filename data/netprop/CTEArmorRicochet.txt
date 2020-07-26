@@ -1,0 +1,6 @@
+// Dump for "CTEArmorRicochet"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_TEMetalSparks)
+  Member: m_vecPos (offset 12) (type vector) (bits 0) (CoordMP)
+  Member: m_vecDir (offset 24) (type vector) (bits 0) (CoordMP)

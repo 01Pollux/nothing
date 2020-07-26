@@ -1,0 +1,18 @@
+// Dump for "CTEShatterSurface"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin (offset 12) (type vector) (bits 0) (CoordMP)
+ Member: m_vecAngles (offset 24) (type vector) (bits 0) (CoordMP)
+ Member: m_vecForce (offset 36) (type vector) (bits 0) (CoordMP)
+ Member: m_vecForcePos (offset 48) (type vector) (bits 0) (CoordMP)
+ Member: m_flWidth (offset 60) (type float) (bits 0) (NoScale)
+ Member: m_flHeight (offset 64) (type float) (bits 0) (NoScale)
+ Member: m_flShardSize (offset 68) (type float) (bits 0) (NoScale)
+ Member: m_nSurfaceType (offset 72) (type integer) (bits 2) (Unsigned)
+ Member: m_uchFrontColor[0] (offset 76) (type integer) (bits 8) (Unsigned)
+ Member: m_uchFrontColor[1] (offset 77) (type integer) (bits 8) (Unsigned)
+ Member: m_uchFrontColor[2] (offset 78) (type integer) (bits 8) (Unsigned)
+ Member: m_uchBackColor[0] (offset 79) (type integer) (bits 8) (Unsigned)
+ Member: m_uchBackColor[1] (offset 80) (type integer) (bits 8) (Unsigned)
+ Member: m_uchBackColor[2] (offset 81) (type integer) (bits 8) (Unsigned)

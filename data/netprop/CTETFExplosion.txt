@@ -1,0 +1,13 @@
+// Dump for "CTETFExplosion"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin[0] (offset 12) (type float) (bits 0) (NoScale|CoordMpIntegral)
+ Member: m_vecOrigin[1] (offset 16) (type float) (bits 0) (NoScale|CoordMpIntegral)
+ Member: m_vecOrigin[2] (offset 20) (type float) (bits 0) (NoScale|CoordMpIntegral)
+ Member: m_vecNormal (offset 24) (type vector) (bits 6) ()
+ Member: m_iWeaponID (offset 36) (type integer) (bits 7) (Unsigned)
+ Member: entindex (offset 40) (type integer) (bits 11) (Unsigned)
+ Member: m_nDefID (offset 44) (type integer) (bits 32) ()
+ Member: m_nSound (offset 48) (type integer) (bits 32) ()
+ Member: m_iCustomParticleIndex (offset 52) (type integer) (bits 32) ()

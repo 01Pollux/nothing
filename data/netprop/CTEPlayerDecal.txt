@@ -1,0 +1,7 @@
+// Dump for "CTEPlayerDecal"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin (offset 16) (type vector) (bits 0) (CoordMP)
+ Member: m_nEntity (offset 28) (type integer) (bits 11) (Unsigned)
+ Member: m_nPlayer (offset 12) (type integer) (bits 5) (Unsigned)

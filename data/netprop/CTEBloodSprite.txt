@@ -1,0 +1,12 @@
+// Dump for "CTEBloodSprite"  Date: 2020/07/25
+//
+
+ Member: m_vecOrigin (offset 12) (type vector) (bits 0) (CoordMP)
+ Member: m_vecDirection (offset 24) (type vector) (bits 0) (CoordMP)
+ Member: r (offset 44) (type integer) (bits 8) (Unsigned)
+ Member: g (offset 48) (type integer) (bits 8) (Unsigned)
+ Member: b (offset 52) (type integer) (bits 8) (Unsigned)
+ Member: a (offset 56) (type integer) (bits 8) (Unsigned)
+ Member: m_nSprayModel (offset 36) (type integer) (bits 13) ()
+ Member: m_nDropModel (offset 40) (type integer) (bits 13) ()
+ Member: m_nSize (offset 60) (type integer) (bits 8) (Unsigned)

@@ -1,0 +1,6 @@
+// Dump for "CTEWorldDecal"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin (offset 12) (type vector) (bits 0) (CoordMpIntegral)
+ Member: m_nIndex (offset 24) (type integer) (bits 9) (Unsigned)

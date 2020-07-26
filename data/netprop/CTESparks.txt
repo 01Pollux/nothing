@@ -1,0 +1,11 @@
+// Dump for "CTESparks"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_TEParticleSystem)
+  Table: baseclass (offset 0) (type DT_BaseTempEntity)
+  Member: m_vecOrigin[0] (offset 12) (type float) (bits 0) (NoScale|VectorElem|CoordMpIntegral)
+  Member: m_vecOrigin[1] (offset 16) (type float) (bits 0) (NoScale|VectorElem|CoordMpIntegral)
+  Member: m_vecOrigin[2] (offset 20) (type float) (bits 0) (NoScale|VectorElem|CoordMpIntegral)
+ Member: m_nMagnitude (offset 24) (type integer) (bits 4) (Unsigned)
+ Member: m_nTrailLength (offset 28) (type integer) (bits 4) (Unsigned)
+ Member: m_vecDir (offset 32) (type vector) (bits 0) (CoordMP)

@@ -1,0 +1,9 @@
+// Dump for "CTestTraceline"  Date: 2020/07/25
+//
+
+ Member: m_clrRender (offset 132) (type integer) (bits 32) (Unsigned)
+ Member: m_vecOrigin (offset 792) (type vector) (bits 19) ()
+ Member: m_angRotation[0] (offset 804) (type float) (bits 19) (VectorElem)
+ Member: m_angRotation[1] (offset 808) (type float) (bits 19) (VectorElem)
+ Member: m_angRotation[2] (offset 812) (type float) (bits 19) (VectorElem)
+ Member: moveparent (offset 336) (type integer) (bits 21) (Unsigned)

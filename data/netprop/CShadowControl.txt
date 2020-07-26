@@ -1,0 +1,7 @@
+// Dump for "CShadowControl"  Date: 2020/07/25
+//
+
+ Member: m_shadowDirection (offset 856) (type vector) (bits 0) (NoScale)
+ Member: m_shadowColor (offset 868) (type integer) (bits 32) (Unsigned)
+ Member: m_flShadowMaxDist (offset 872) (type float) (bits 0) (NoScale)
+ Member: m_bDisableShadows (offset 876) (type integer) (bits 1) (Unsigned)

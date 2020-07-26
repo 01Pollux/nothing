@@ -1,0 +1,6 @@
+// Dump for "CTEBeamSpline"  Date: 2020/07/25
+//
+
+ Member: m_nPoints (offset 204) (type integer) (bits 5) (Unsigned)
+ Member: m_vecPoints (offset 12) (type vector) (bits 0) (InsideArray|CoordMP)
+ Member: m_vecPoints (offset 0) (type array) (bits 0) ()

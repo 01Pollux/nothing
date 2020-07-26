@@ -1,0 +1,9 @@
+// Dump for "CTEClientProjectile"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin (offset 12) (type vector) (bits 0) (CoordMP)
+ Member: m_vecVelocity (offset 24) (type vector) (bits 0) (CoordMP)
+ Member: m_nModelIndex (offset 36) (type integer) (bits 13) ()
+ Member: m_nLifeTime (offset 40) (type integer) (bits 6) (Unsigned)
+ Member: m_hOwner (offset 44) (type integer) (bits 21) (Unsigned)

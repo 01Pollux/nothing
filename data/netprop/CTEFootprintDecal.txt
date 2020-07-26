@@ -1,0 +1,9 @@
+// Dump for "CTEFootprintDecal"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin (offset 12) (type vector) (bits 0) (CoordMP)
+ Member: m_vecDirection (offset 24) (type vector) (bits 0) (CoordMP)
+ Member: m_nEntity (offset 36) (type integer) (bits 11) (Unsigned)
+ Member: m_nIndex (offset 40) (type integer) (bits 8) (Unsigned)
+ Member: m_chMaterialType (offset 44) (type integer) (bits 8) (Unsigned)

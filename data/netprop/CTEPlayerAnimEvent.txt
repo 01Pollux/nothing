@@ -1,0 +1,6 @@
+// Dump for "CTEPlayerAnimEvent"  Date: 2020/07/25
+//
+
+ Member: m_iPlayerIndex (offset 12) (type integer) (bits 7) (Unsigned)
+ Member: m_iEvent (offset 16) (type integer) (bits 6) (Unsigned)
+ Member: m_nData (offset 20) (type integer) (bits 12) ()

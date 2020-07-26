@@ -1,0 +1,21 @@
+// Dump for "CRopeKeyframe"  Date: 2020/07/25
+//
+
+ Member: m_hStartPoint (offset 920) (type integer) (bits 21) (Unsigned)
+ Member: m_hEndPoint (offset 924) (type integer) (bits 21) (Unsigned)
+ Member: m_iStartAttachment (offset 928) (type integer) (bits 5) ()
+ Member: m_iEndAttachment (offset 930) (type integer) (bits 5) ()
+ Member: m_Slack (offset 868) (type integer) (bits 12) ()
+ Member: m_RopeLength (offset 900) (type integer) (bits 15) ()
+ Member: m_fLockedPoints (offset 904) (type integer) (bits 4) (Unsigned)
+ Member: m_RopeFlags (offset 860) (type integer) (bits 9) (Unsigned)
+ Member: m_nSegments (offset 880) (type integer) (bits 4) (Unsigned)
+ Member: m_bConstrainBetweenEndpoints (offset 884) (type integer) (bits 1) (Unsigned)
+ Member: m_iRopeMaterialModelIndex (offset 892) (type integer) (bits 16) (Unsigned)
+ Member: m_Subdiv (offset 896) (type integer) (bits 4) (Unsigned)
+ Member: m_TextureScale (offset 876) (type float) (bits 10) ()
+ Member: m_Width (offset 872) (type float) (bits 0) (NoScale)
+ Member: m_flScrollSpeed (offset 912) (type float) (bits 0) (NoScale)
+ Member: m_vecOrigin (offset 792) (type vector) (bits 0) (CoordMP)
+ Member: moveparent (offset 336) (type integer) (bits 21) (Unsigned)
+ Member: m_iParentAttachment (offset 333) (type integer) (bits 6) (Unsigned)

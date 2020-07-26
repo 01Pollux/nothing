@@ -1,0 +1,4 @@
+// Dump for "CRagdollManager"  Date: 2020/07/25
+//
+
+ Member: m_iCurrentMaxRagdollCount (offset 856) (type integer) (bits 6) ()

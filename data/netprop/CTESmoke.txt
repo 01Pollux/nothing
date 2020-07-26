@@ -1,0 +1,8 @@
+// Dump for "CTESmoke"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin (offset 12) (type vector) (bits 0) (CoordMP)
+ Member: m_nModelIndex (offset 24) (type integer) (bits 13) ()
+ Member: m_fScale (offset 28) (type float) (bits 8) (RoundDown)
+ Member: m_nFrameRate (offset 32) (type integer) (bits 8) (Unsigned)

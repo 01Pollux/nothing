@@ -1,0 +1,8 @@
+// Dump for "CTEFizz"  Date: 2020/07/25
+//
+
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_nEntity (offset 12) (type integer) (bits 11) (Unsigned)
+ Member: m_nModelIndex (offset 16) (type integer) (bits 13) ()
+ Member: m_nDensity (offset 20) (type integer) (bits 8) (Unsigned)
+ Member: m_nCurrent (offset 24) (type integer) (bits 16) ()
