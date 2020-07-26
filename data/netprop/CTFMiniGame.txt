@@ -1,0 +1,11 @@
+// Dump for "CTFMiniGame"  Date: 2020/07/25
+//
+
+ Table: m_nMinigameTeamScore (offset 1344) (type m_nMinigameTeamScore)
+  Member: 000 (offset 0) (type integer) (bits 32) (Unsigned|VarInt)
+  Member: 001 (offset 4) (type integer) (bits 32) (Unsigned|VarInt)
+  Member: 002 (offset 8) (type integer) (bits 32) (Unsigned|VarInt)
+  Member: 003 (offset 12) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_nMaxScoreForMiniGame (offset 1340) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_pszHudResFile (offset 1080) (type string) (bits 0) ()
+ Member: m_eScoringType (offset 1360) (type integer) (bits 32) (Unsigned|VarInt)

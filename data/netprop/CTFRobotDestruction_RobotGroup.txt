@@ -1,0 +1,10 @@
+// Dump for "CTFRobotDestruction_RobotGroup"  Date: 2020/07/25
+//
+
+ Member: m_pszHudIcon (offset 944) (type string) (bits 0) ()
+ Member: m_iTeamNum (offset 516) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_nGroupNumber (offset 1204) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_nState (offset 1208) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_flRespawnStartTime (offset 1212) (type float) (bits 0) (NoScale)
+ Member: m_flRespawnEndTime (offset 1216) (type float) (bits 0) (NoScale)
+ Member: m_flLastAttackedTime (offset 1220) (type float) (bits 0) (NoScale)

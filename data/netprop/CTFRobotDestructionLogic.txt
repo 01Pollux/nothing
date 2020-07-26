@@ -1,0 +1,20 @@
+// Dump for "CTFRobotDestructionLogic"  Date: 2020/07/25
+//
+
+ Member: m_nMaxPoints (offset 1384) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_nBlueScore (offset 1400) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_nRedScore (offset 1404) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_nBlueTargetPoints (offset 1408) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_nRedTargetPoints (offset 1412) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_flBlueTeamRespawnScale (offset 1416) (type float) (bits 0) (NoScale)
+ Member: m_flRedTeamRespawnScale (offset 1420) (type float) (bits 0) (NoScale)
+ Member: m_flBlueFinaleEndTime (offset 1392) (type float) (bits 0) (NoScale)
+ Member: m_flRedFinaleEndTime (offset 1396) (type float) (bits 0) (NoScale)
+ Member: m_flFinaleLength (offset 1388) (type float) (bits 0) (NoScale)
+ Member: m_szResFile (offset 1424) (type string) (bits 0) ()
+ Table: m_eWinningMethod (offset 1684) (type m_eWinningMethod)
+  Member: 000 (offset 0) (type integer) (bits 32) (Unsigned|VarInt)
+  Member: 001 (offset 4) (type integer) (bits 32) (Unsigned|VarInt)
+  Member: 002 (offset 8) (type integer) (bits 32) (Unsigned|VarInt)
+  Member: 003 (offset 12) (type integer) (bits 32) (Unsigned|VarInt)
+ Member: m_flCountdownEndTime (offset 1700) (type float) (bits 0) (NoScale)

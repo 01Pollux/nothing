@@ -1,0 +1,4 @@
+// Dump for "CTFMinigameLogic"  Date: 2020/07/25
+//
+
+ Member: m_hActiveMinigame (offset 860) (type integer) (bits 21) (Unsigned)
