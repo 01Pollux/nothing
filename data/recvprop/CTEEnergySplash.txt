@@ -1,0 +1,6 @@
+// Dump for "CTEEnergySplash"
+
+
+Member: m_vecPos (offset 16) (type vector) (bits -1) ()
+Member: m_vecDir (offset 28) (type vector) (bits -1) ()
+Member: m_bExplosive (offset 40) (type integer) (bits -1) ()

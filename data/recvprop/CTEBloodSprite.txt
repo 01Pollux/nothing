@@ -1,0 +1,12 @@
+// Dump for "CTEBloodSprite"
+
+
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_vecDirection (offset 28) (type vector) (bits -1) ()
+Member: r (offset 40) (type integer) (bits -1) ()
+Member: g (offset 44) (type integer) (bits -1) ()
+Member: b (offset 48) (type integer) (bits -1) ()
+Member: a (offset 52) (type integer) (bits -1) ()
+Member: m_nSprayModel (offset 60) (type integer) (bits -1) ()
+Member: m_nDropModel (offset 56) (type integer) (bits -1) ()
+Member: m_nSize (offset 64) (type integer) (bits -1) ()

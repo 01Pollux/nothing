@@ -1,0 +1,6 @@
+// Dump for "CTEArmorRicochet"
+
+
+Table: baseclass (offset 0) (type DT_TEMetalSparks)
+ Member: m_vecPos (offset 16) (type vector) (bits -1) ()
+ Member: m_vecDir (offset 28) (type vector) (bits -1) ()

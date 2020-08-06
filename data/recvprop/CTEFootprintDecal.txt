@@ -1,0 +1,9 @@
+// Dump for "CTEFootprintDecal"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_vecDirection (offset 28) (type vector) (bits -1) ()
+Member: m_nEntity (offset 52) (type integer) (bits -1) ()
+Member: m_nIndex (offset 56) (type integer) (bits -1) ()
+Member: m_chMaterialType (offset 60) (type integer) (bits -1) ()

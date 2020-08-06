@@ -1,0 +1,5 @@
+// Dump for "CInfoOverlayAccessor"
+
+
+Member: m_iTextureFrameIndex (offset 1272) (type integer) (bits -1) ()
+Member: m_iOverlayID (offset 1360) (type integer) (bits -1) ()

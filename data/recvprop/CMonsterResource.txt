@@ -1,0 +1,8 @@
+// Dump for "CMonsterResource"
+
+
+Member: m_iBossHealthPercentageByte (offset 1360) (type integer) (bits -1) ()
+Member: m_iBossStunPercentageByte (offset 1364) (type integer) (bits -1) ()
+Member: m_iSkillShotCompleteCount (offset 1368) (type integer) (bits -1) ()
+Member: m_fSkillShotComboEndTime (offset 1372) (type float) (bits -1) ()
+Member: m_iBossState (offset 1376) (type integer) (bits -1) ()

@@ -1,0 +1,12 @@
+// Dump for "CTEDynamicLight"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: r (offset 32) (type integer) (bits -1) ()
+Member: g (offset 36) (type integer) (bits -1) ()
+Member: b (offset 40) (type integer) (bits -1) ()
+Member: exponent (offset 44) (type integer) (bits -1) ()
+Member: m_fRadius (offset 28) (type float) (bits -1) ()
+Member: m_fTime (offset 48) (type float) (bits -1) ()
+Member: m_fDecay (offset 52) (type float) (bits -1) ()

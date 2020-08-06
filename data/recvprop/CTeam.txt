@@ -1,0 +1,9 @@
+// Dump for "CTeam"
+
+
+Member: m_iTeamNum (offset 1432) (type integer) (bits -1) ()
+Member: m_iScore (offset 1412) (type integer) (bits -1) ()
+Member: m_iRoundsWon (offset 1416) (type integer) (bits -1) ()
+Member: m_szTeamname (offset 1380) (type string) (bits -1) ()
+Member: player_array_element (offset 0) (type integer) (bits -1) ()
+Member: "player_array" (offset 0) (type array) (bits 0) ()

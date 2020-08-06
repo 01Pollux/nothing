@@ -1,0 +1,16 @@
+// Dump for "CTEExplosion"
+
+
+Table: baseclass (offset 0) (type DT_TEParticleSystem)
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin[0] (offset 16) (type float) (bits -1) ()
+ Member: m_vecOrigin[1] (offset 20) (type float) (bits -1) ()
+ Member: m_vecOrigin[2] (offset 24) (type float) (bits -1) ()
+Member: m_nModelIndex (offset 28) (type integer) (bits -1) ()
+Member: m_fScale (offset 32) (type float) (bits -1) ()
+Member: m_nFrameRate (offset 36) (type integer) (bits -1) ()
+Member: m_nFlags (offset 40) (type integer) (bits -1) ()
+Member: m_vecNormal (offset 44) (type vector) (bits -1) ()
+Member: m_chMaterialType (offset 56) (type integer) (bits -1) ()
+Member: m_nRadius (offset 60) (type integer) (bits -1) ()
+Member: m_nMagnitude (offset 64) (type integer) (bits -1) ()

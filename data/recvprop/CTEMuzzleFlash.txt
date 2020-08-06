@@ -1,0 +1,8 @@
+// Dump for "CTEMuzzleFlash"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_vecAngles (offset 28) (type vector) (bits -1) ()
+Member: m_flScale (offset 40) (type float) (bits -1) ()
+Member: m_nType (offset 44) (type integer) (bits -1) ()

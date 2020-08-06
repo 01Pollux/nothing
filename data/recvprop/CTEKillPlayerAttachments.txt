@@ -1,0 +1,5 @@
+// Dump for "CTEKillPlayerAttachments"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_nPlayer (offset 16) (type integer) (bits -1) ()

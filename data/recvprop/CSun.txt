@@ -1,0 +1,12 @@
+// Dump for "CSun"
+
+
+Member: m_clrRender (offset 92) (type integer) (bits -1) ()
+Member: m_clrOverlay (offset 1696) (type integer) (bits -1) ()
+Member: m_vDirection (offset 1708) (type vector) (bits -1) ()
+Member: m_bOn (offset 1720) (type integer) (bits -1) ()
+Member: m_nSize (offset 1700) (type integer) (bits -1) ()
+Member: m_nOverlaySize (offset 1704) (type integer) (bits -1) ()
+Member: m_nMaterial (offset 1724) (type integer) (bits -1) ()
+Member: m_nOverlayMaterial (offset 1728) (type integer) (bits -1) ()
+Member: HDRColorScale (offset 0) (type float) (bits -1) ()

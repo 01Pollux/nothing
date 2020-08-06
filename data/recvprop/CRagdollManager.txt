@@ -1,0 +1,4 @@
+// Dump for "CRagdollManager"
+
+
+Member: m_iCurrentMaxRagdollCount (offset 1360) (type integer) (bits -1) ()

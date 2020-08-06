@@ -1,0 +1,9 @@
+// Dump for "CTEClientProjectile"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_vecVelocity (offset 28) (type vector) (bits -1) ()
+Member: m_nModelIndex (offset 40) (type integer) (bits -1) ()
+Member: m_nLifeTime (offset 44) (type integer) (bits -1) ()
+Member: m_hOwner (offset 48) (type integer) (bits -1) ()

@@ -1,0 +1,12 @@
+// Dump for "CTEFireBullets"
+
+
+Member: m_vecOrigin (offset 20) (type vector) (bits -1) ()
+Member: m_vecAngles[0] (offset 32) (type float) (bits -1) ()
+Member: m_vecAngles[1] (offset 36) (type float) (bits -1) ()
+Member: m_iWeaponID (offset 44) (type integer) (bits -1) ()
+Member: m_iMode (offset 48) (type integer) (bits -1) ()
+Member: m_iSeed (offset 52) (type integer) (bits -1) ()
+Member: m_iPlayer (offset 16) (type integer) (bits -1) ()
+Member: m_flSpread (offset 56) (type float) (bits -1) ()
+Member: m_bCritical (offset 60) (type integer) (bits -1) ()

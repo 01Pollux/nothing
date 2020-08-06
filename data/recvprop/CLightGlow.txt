@@ -1,0 +1,15 @@
+// Dump for "CLightGlow"
+
+
+Member: m_clrRender (offset 92) (type integer) (bits -1) ()
+Member: m_nHorizontalSize (offset 1360) (type integer) (bits -1) ()
+Member: m_nVerticalSize (offset 1364) (type integer) (bits -1) ()
+Member: m_nMinDist (offset 1368) (type integer) (bits -1) ()
+Member: m_nMaxDist (offset 1372) (type integer) (bits -1) ()
+Member: m_nOuterMaxDist (offset 1376) (type integer) (bits -1) ()
+Member: m_spawnflags (offset 1380) (type integer) (bits -1) ()
+Member: m_vecOrigin (offset 868) (type vector) (bits -1) ()
+Member: m_angRotation (offset 880) (type vector) (bits -1) ()
+Member: moveparent (offset 444) (type integer) (bits -1) ()
+Member: m_flGlowProxySize (offset 1588) (type float) (bits -1) ()
+Member: HDRColorScale (offset 0) (type float) (bits -1) ()

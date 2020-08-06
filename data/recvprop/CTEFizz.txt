@@ -1,0 +1,8 @@
+// Dump for "CTEFizz"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_nEntity (offset 16) (type integer) (bits -1) ()
+Member: m_nModelIndex (offset 20) (type integer) (bits -1) ()
+Member: m_nDensity (offset 24) (type integer) (bits -1) ()
+Member: m_nCurrent (offset 28) (type integer) (bits -1) ()

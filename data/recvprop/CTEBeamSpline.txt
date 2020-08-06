@@ -1,0 +1,6 @@
+// Dump for "CTEBeamSpline"
+
+
+Member: m_nPoints (offset 208) (type integer) (bits -1) ()
+Member: m_vecPoints[0] (offset 16) (type vector) (bits -1) ()
+Member: m_vecPoints (offset 0) (type array) (bits 12) ()

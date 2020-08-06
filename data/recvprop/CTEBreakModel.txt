@@ -1,0 +1,15 @@
+// Dump for "CTEBreakModel"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_angRotation[0] (offset 28) (type float) (bits -1) ()
+Member: m_angRotation[1] (offset 32) (type float) (bits -1) ()
+Member: m_angRotation[2] (offset 36) (type float) (bits -1) ()
+Member: m_vecSize (offset 40) (type vector) (bits -1) ()
+Member: m_vecVelocity (offset 52) (type vector) (bits -1) ()
+Member: m_nModelIndex (offset 68) (type integer) (bits -1) ()
+Member: m_nRandomization (offset 64) (type integer) (bits -1) ()
+Member: m_nCount (offset 72) (type integer) (bits -1) ()
+Member: m_fTime (offset 76) (type float) (bits -1) ()
+Member: m_nFlags (offset 80) (type integer) (bits -1) ()

@@ -1,0 +1,21 @@
+// Dump for "CTEBeamRing"
+
+
+Table: baseclass (offset 0) (type DT_BaseBeam)
+ Member: m_nModelIndex (offset 16) (type integer) (bits -1) ()
+ Member: m_nHaloIndex (offset 20) (type integer) (bits -1) ()
+ Member: m_nStartFrame (offset 24) (type integer) (bits -1) ()
+ Member: m_nFrameRate (offset 28) (type integer) (bits -1) ()
+ Member: m_fLife (offset 32) (type float) (bits -1) ()
+ Member: m_fWidth (offset 36) (type float) (bits -1) ()
+ Member: m_fEndWidth (offset 40) (type float) (bits -1) ()
+ Member: m_nFadeLength (offset 44) (type integer) (bits -1) ()
+ Member: m_fAmplitude (offset 48) (type float) (bits -1) ()
+ Member: m_nSpeed (offset 68) (type integer) (bits -1) ()
+ Member: r (offset 52) (type integer) (bits -1) ()
+ Member: g (offset 56) (type integer) (bits -1) ()
+ Member: b (offset 60) (type integer) (bits -1) ()
+ Member: a (offset 64) (type integer) (bits -1) ()
+ Member: m_nFlags (offset 72) (type integer) (bits -1) ()
+Member: m_nStartEntity (offset 76) (type integer) (bits -1) ()
+Member: m_nEndEntity (offset 80) (type integer) (bits -1) ()

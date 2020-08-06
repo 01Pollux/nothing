@@ -1,0 +1,5 @@
+// Dump for "CParticleFire"
+
+
+Member: m_vOrigin (offset 1604) (type vector) (bits -1) ()
+Member: m_vDirection (offset 1616) (type vector) (bits -1) ()

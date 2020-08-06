@@ -1,0 +1,7 @@
+// Dump for "CTEBSPDecal"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_nEntity (offset 28) (type integer) (bits -1) ()
+Member: m_nIndex (offset 32) (type integer) (bits -1) ()

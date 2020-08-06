@@ -1,0 +1,9 @@
+// Dump for "CTEGlowSprite"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_nModelIndex (offset 28) (type integer) (bits -1) ()
+Member: m_fScale (offset 32) (type float) (bits -1) ()
+Member: m_fLife (offset 36) (type float) (bits -1) ()
+Member: m_nBrightness (offset 40) (type integer) (bits -1) ()

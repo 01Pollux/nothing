@@ -1,0 +1,9 @@
+// Dump for "CTEDecal"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_vecStart (offset 28) (type vector) (bits -1) ()
+Member: m_nEntity (offset 40) (type integer) (bits -1) ()
+Member: m_nHitbox (offset 44) (type integer) (bits -1) ()
+Member: m_nIndex (offset 48) (type integer) (bits -1) ()

@@ -1,0 +1,10 @@
+// Dump for "CTEBubbleTrail"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecMins (offset 16) (type vector) (bits -1) ()
+Member: m_vecMaxs (offset 28) (type vector) (bits -1) ()
+Member: m_nModelIndex (offset 44) (type integer) (bits -1) ()
+Member: m_flWaterZ (offset 40) (type float) (bits -1) ()
+Member: m_nCount (offset 48) (type integer) (bits -1) ()
+Member: m_fSpeed (offset 52) (type float) (bits -1) ()

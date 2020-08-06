@@ -1,0 +1,21 @@
+// Dump for "CRopeKeyframe"
+
+
+Member: m_iRopeMaterialModelIndex (offset 1420) (type integer) (bits -1) ()
+Member: m_hStartPoint (offset 2076) (type integer) (bits -1) ()
+Member: m_hEndPoint (offset 2080) (type integer) (bits -1) ()
+Member: m_iStartAttachment (offset 2084) (type integer) (bits -1) ()
+Member: m_iEndAttachment (offset 2086) (type integer) (bits -1) ()
+Member: m_fLockedPoints (offset 2104) (type integer) (bits -1) ()
+Member: m_Slack (offset 2096) (type integer) (bits -1) ()
+Member: m_RopeLength (offset 2092) (type integer) (bits -1) ()
+Member: m_RopeFlags (offset 1416) (type integer) (bits -1) ()
+Member: m_TextureScale (offset 2100) (type float) (bits -1) ()
+Member: m_nSegments (offset 2072) (type integer) (bits -1) ()
+Member: m_bConstrainBetweenEndpoints (offset 2240) (type integer) (bits -1) ()
+Member: m_Subdiv (offset 2088) (type integer) (bits -1) ()
+Member: m_Width (offset 2108) (type float) (bits -1) ()
+Member: m_flScrollSpeed (offset 1412) (type float) (bits -1) ()
+Member: m_vecOrigin (offset 868) (type vector) (bits -1) ()
+Member: moveparent (offset 444) (type integer) (bits -1) ()
+Member: m_iParentAttachment (offset 422) (type integer) (bits -1) ()

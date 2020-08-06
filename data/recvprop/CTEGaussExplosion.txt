@@ -1,0 +1,10 @@
+// Dump for "CTEGaussExplosion"
+
+
+Table: baseclass (offset 0) (type DT_TEParticleSystem)
+ Table: baseclass (offset 0) (type DT_BaseTempEntity)
+ Member: m_vecOrigin[0] (offset 16) (type float) (bits -1) ()
+ Member: m_vecOrigin[1] (offset 20) (type float) (bits -1) ()
+ Member: m_vecOrigin[2] (offset 24) (type float) (bits -1) ()
+Member: m_nType (offset 28) (type integer) (bits -1) ()
+Member: m_vecDirection (offset 32) (type vector) (bits -1) ()
