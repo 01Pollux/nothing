@@ -1,0 +1,5 @@
+// Dump for "CEnvDetailController"
+
+
+Member: m_flFadeStartDist (offset 1360) (type float) (bits -1) ()
+Member: m_flFadeEndDist (offset 1364) (type float) (bits -1) ()

@@ -1,0 +1,11 @@
+// Dump for "CFish"
+
+
+Member: m_poolOrigin (offset 2312) (type vector) (bits -1) ()
+Member: m_x (offset 2288) (type float) (bits -1) ()
+Member: m_y (offset 2292) (type float) (bits -1) ()
+Member: m_z (offset 2296) (type float) (bits -1) ()
+Member: m_angle (offset 2304) (type float) (bits -1) ()
+Member: m_nModelIndex (offset 144) (type integer) (bits -1) ()
+Member: m_lifeState (offset 165) (type integer) (bits -1) ()
+Member: m_waterLevel (offset 2324) (type float) (bits -1) ()
