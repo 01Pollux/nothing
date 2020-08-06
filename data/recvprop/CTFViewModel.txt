@@ -1,0 +1,19 @@
+// Dump for "CTFViewModel"
+
+
+Table: baseclass (offset 0) (type DT_BaseViewModel)
+ Member: m_nModelIndex (offset 144) (type integer) (bits -1) ()
+ Member: m_nSkin (offset 1368) (type integer) (bits -1) ()
+ Member: m_nBody (offset 1372) (type integer) (bits -1) ()
+ Member: m_nSequence (offset 2040) (type integer) (bits -1) ()
+ Member: m_nViewModelIndex (offset 2232) (type integer) (bits -1) ()
+ Member: m_flPlaybackRate (offset 1408) (type float) (bits -1) ()
+ Member: m_fEffects (offset 124) (type integer) (bits -1) ()
+ Member: m_nAnimationParity (offset 2248) (type integer) (bits -1) ()
+ Member: m_hWeapon (offset 2264) (type integer) (bits -1) ()
+ Member: m_hOwner (offset 2236) (type integer) (bits -1) ()
+ Member: m_nNewSequenceParity (offset 1996) (type integer) (bits -1) ()
+ Member: m_nResetEventsParity (offset 2000) (type integer) (bits -1) ()
+ Member: m_nMuzzleFlashParity (offset 2180) (type integer) (bits -1) ()
+ Member: m_flPoseParameter[0] (offset 1628) (type float) (bits -1) ()
+ Member: m_flPoseParameter (offset 0) (type array) (bits 4) ()

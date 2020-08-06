@@ -1,0 +1,20 @@
+// Dump for "CTFRobotDestructionLogic"
+
+
+Member: m_nMaxPoints (offset 1364) (type integer) (bits -1) ()
+Member: m_nBlueScore (offset 1380) (type integer) (bits -1) ()
+Member: m_nRedScore (offset 1384) (type integer) (bits -1) ()
+Member: m_nBlueTargetPoints (offset 1388) (type integer) (bits -1) ()
+Member: m_nRedTargetPoints (offset 1392) (type integer) (bits -1) ()
+Member: m_flBlueTeamRespawnScale (offset 1396) (type float) (bits -1) ()
+Member: m_flRedTeamRespawnScale (offset 1400) (type float) (bits -1) ()
+Member: m_flBlueFinaleEndTime (offset 1372) (type float) (bits -1) ()
+Member: m_flRedFinaleEndTime (offset 1376) (type float) (bits -1) ()
+Member: m_flFinaleLength (offset 1368) (type float) (bits -1) ()
+Member: m_szResFile (offset 1404) (type string) (bits -1) ()
+Table: m_eWinningMethod (offset 1664) (type m_eWinningMethod)
+ Member: 000 (offset 0) (type integer) (bits -1) ()
+ Member: 001 (offset 4) (type integer) (bits -1) ()
+ Member: 002 (offset 8) (type integer) (bits -1) ()
+ Member: 003 (offset 12) (type integer) (bits -1) ()
+Member: m_flCountdownEndTime (offset 1680) (type float) (bits -1) ()

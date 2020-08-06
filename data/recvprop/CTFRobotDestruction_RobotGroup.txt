@@ -1,0 +1,10 @@
+// Dump for "CTFRobotDestruction_RobotGroup"
+
+
+Member: m_pszHudIcon (offset 1368) (type string) (bits -1) ()
+Member: m_iTeamNum (offset 1364) (type integer) (bits -1) ()
+Member: m_nGroupNumber (offset 1628) (type integer) (bits -1) ()
+Member: m_nState (offset 1632) (type integer) (bits -1) ()
+Member: m_flRespawnStartTime (offset 1636) (type float) (bits -1) ()
+Member: m_flRespawnEndTime (offset 1640) (type float) (bits -1) ()
+Member: m_flLastAttackedTime (offset 1644) (type float) (bits -1) ()
