@@ -1,0 +1,9 @@
+// Dump for "CTestTraceline"
+
+
+Member: m_clrRender (offset 92) (type integer) (bits -1) ()
+Member: m_vecOrigin (offset 868) (type vector) (bits -1) ()
+Member: m_angRotation[0] (offset 880) (type float) (bits -1) ()
+Member: m_angRotation[1] (offset 884) (type float) (bits -1) ()
+Member: m_angRotation[2] (offset 888) (type float) (bits -1) ()
+Member: moveparent (offset 444) (type integer) (bits -1) ()

@@ -1,0 +1,6 @@
+// Dump for "CTEPlayerAnimEvent"
+
+
+Member: m_iPlayerIndex (offset 16) (type integer) (bits -1) ()
+Member: m_iEvent (offset 20) (type integer) (bits -1) ()
+Member: m_nData (offset 24) (type integer) (bits -1) ()

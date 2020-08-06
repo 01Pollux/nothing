@@ -1,0 +1,13 @@
+// Dump for "CTETFExplosion"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin[0] (offset 16) (type float) (bits -1) ()
+Member: m_vecOrigin[1] (offset 20) (type float) (bits -1) ()
+Member: m_vecOrigin[2] (offset 24) (type float) (bits -1) ()
+Member: m_vecNormal (offset 28) (type vector) (bits -1) ()
+Member: m_iWeaponID (offset 40) (type integer) (bits -1) ()
+Member: entindex (offset 0) (type integer) (bits -1) ()
+Member: m_nDefID (offset 48) (type integer) (bits -1) ()
+Member: m_nSound (offset 52) (type integer) (bits -1) ()
+Member: m_iCustomParticleIndex (offset 56) (type integer) (bits -1) ()

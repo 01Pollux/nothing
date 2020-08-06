@@ -1,0 +1,4 @@
+// Dump for "CTFMinigameLogic"
+
+
+Member: m_hActiveMinigame (offset 1360) (type integer) (bits -1) ()

@@ -1,0 +1,7 @@
+// Dump for "CTEPlayerDecal"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 20) (type vector) (bits -1) ()
+Member: m_nEntity (offset 32) (type integer) (bits -1) ()
+Member: m_nPlayer (offset 16) (type integer) (bits -1) ()

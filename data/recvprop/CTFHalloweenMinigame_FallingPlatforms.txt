@@ -1,0 +1,13 @@
+// Dump for "CTFHalloweenMinigame_FallingPlatforms"
+
+
+Table: baseclass (offset 0) (type DT_TFHalloweenMinigame)
+ Table: baseclass (offset 0) (type DT_TFMinigame)
+  Table: m_nMinigameTeamScore (offset 1628) (type m_nMinigameTeamScore)
+   Member: 000 (offset 0) (type integer) (bits -1) ()
+   Member: 001 (offset 4) (type integer) (bits -1) ()
+   Member: 002 (offset 8) (type integer) (bits -1) ()
+   Member: 003 (offset 12) (type integer) (bits -1) ()
+  Member: m_nMaxScoreForMiniGame (offset 1624) (type integer) (bits -1) ()
+  Member: m_pszHudResFile (offset 1364) (type string) (bits -1) ()
+  Member: m_eScoringType (offset 1644) (type integer) (bits -1) ()

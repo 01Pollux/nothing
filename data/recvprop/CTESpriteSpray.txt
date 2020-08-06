@@ -1,0 +1,10 @@
+// Dump for "CTESpriteSpray"
+
+
+Table: baseclass (offset 0) (type DT_BaseTempEntity)
+Member: m_vecOrigin (offset 16) (type vector) (bits -1) ()
+Member: m_vecDirection (offset 28) (type vector) (bits -1) ()
+Member: m_nModelIndex (offset 40) (type integer) (bits -1) ()
+Member: m_fNoise (offset 48) (type float) (bits -1) ()
+Member: m_nCount (offset 52) (type integer) (bits -1) ()
+Member: m_nSpeed (offset 44) (type integer) (bits -1) ()
