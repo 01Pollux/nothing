@@ -77,8 +77,6 @@ enum struct CUtlVector
 		if (size > this.memory.Count())
 			this.memory.Grow(size - this.memory.Count());
 		
-		PrintToServer("Growing from %i to %i, MEMCOUNT = %i", this.size, size, this.memory.Count());
-		
 		this.size = size;
 	}
 	
@@ -222,12 +220,11 @@ enum struct CUtlVector
 		this.ShiftElementsRight(this.size);
 		
 		this.memory.StoreDword(pos, data);
-		PrintToServer("[%i] = data(%i)", pos, data);
 		
 		return data;
 	}
 	
-	Address AddToHead(any data)
+	Address AddToHead(any& data)
 	{
 		this.GrowVector();
 		this.ShiftElementsRight(0);
@@ -239,7 +236,7 @@ enum struct CUtlVector
 	}
 	
 	
-	int AddToHeadNoConstruct(any& data)
+	int AddToHeadNoConstruct(any data)
 	{
 		this.GrowVector();
 		this.ShiftElementsRight(0);
